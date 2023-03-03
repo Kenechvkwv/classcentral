@@ -15,7 +15,7 @@
     <meta name="application-name" content="Class Central" />
 
     <title itemprop="name">
-      Class Central • Find the best courses, wherever they exist.
+      क्लास सेंट्रल • जहां भी वे मौजूद हैं, सबसे अच्छे पाठ्यक्रम खोजें।
     </title>
     <link rel="canonical" href="index.html" />
     <meta
@@ -86,6 +86,8 @@
         ]
       }
     </script>
+
+    <script src="index.js"></script>
 
     <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png" />
     <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png" />
@@ -255,13 +257,13 @@
               <i
                 class="relative symbol-classcentral-navy symbol-small block large-up-hidden"
               ></i>
-              <span class="off-page">Class Central</span>
+              <span class="off-page">वर्ग केंद्र</span>
             </a>
 
             <div
               data-name="MAIN_NAV_TRIGGER_CONTAINER"
               style="display: flex; align-items: center; height: 100%"
-              class="margin-right-small large-up-margin-right-medium"
+              class="margin-right-small large-up-margin-right-medium hovertest"
             >
               <button
                 aria-label="Site Menu"
@@ -275,7 +277,7 @@
                 class="hidden weight-semi large-up-block text-1 color-charcoal padding-right-small"
                 type="button"
               >
-                Courses
+                पाठ्यक्रम
               </button>
               <nav class="main-nav-dropdown js-main-nav-dropdown">
                 <div class="main-nav-dropdown__index">
@@ -283,7 +285,7 @@
                     <h2
                       class="main-nav-dropdown__header-brand icon-lettermark-charcoal"
                     >
-                      Class Central
+                      वर्ग केंद्र
                     </h2>
 
                     <button
@@ -309,7 +311,7 @@
                           data-name="NAV_SUBSECTION_PARENT"
                           data-detail='&#x7B;"childListId"&#x3A;"rankings"&#x7D;'
                         >
-                          <span>Rankings</span>
+                          <span>रैंकिंग</span>
                           <span
                             class="main-nav-dropdown__item-icon icon-chevron-right-charcoal icon-small"
                           ></span>
@@ -325,7 +327,7 @@
                           data-name="NAV_SUBSECTION_PARENT"
                           data-detail='&#x7B;"childListId"&#x3A;"collections"&#x7D;'
                         >
-                          <span>Collections</span>
+                          <span>संग्रह</span>
                           <span
                             class="main-nav-dropdown__item-icon icon-chevron-right-charcoal icon-small"
                           ></span>
@@ -336,14 +338,12 @@
 
                   <section class="main-nav-dropdown__section--with-header">
                     <div class="main-nav-dropdown__section-header">
-                      <h3 class="main-nav-dropdown__section-heading">
-                        Subjects
-                      </h3>
+                      <h3 class="main-nav-dropdown__section-heading">विषयों</h3>
                       <a
                         class="main-nav-dropdown__section-button large-up-hidden"
                         href="subjects.html"
                         data-track-ga='&#x7B;"category"&#x3A;"nav_click","action"&#x3A;"subject","label"&#x3A;"view&#x20;all"&#x7D;'
-                        >View all</a
+                        >सभी को देखें</a
                       >
                     </div>
 
@@ -358,7 +358,7 @@
                           data-name="NAV_SUBSECTION_PARENT"
                           data-detail='&#x7B;"childListId"&#x3A;"subject-cs"&#x7D;'
                         >
-                          <span>Computer Science</span>
+                          <span>कंप्यूटर विज्ञान</span>
                           <span
                             class="main-nav-dropdown__item-icon icon-chevron-right-charcoal icon-small"
                           ></span>
@@ -374,7 +374,7 @@
                           data-name="NAV_SUBSECTION_PARENT"
                           data-detail='&#x7B;"childListId"&#x3A;"subject-health"&#x7D;'
                         >
-                          <span>Health &amp; Medicine</span>
+                          <span>स्वास्थ्य &amp; दवा</span>
                           <span
                             class="main-nav-dropdown__item-icon icon-chevron-right-charcoal icon-small"
                           ></span>
@@ -390,7 +390,7 @@
                           data-name="NAV_SUBSECTION_PARENT"
                           data-detail='&#x7B;"childListId"&#x3A;"subject-maths"&#x7D;'
                         >
-                          <span>Mathematics</span>
+                          <span>अंक शास्त्र</span>
                           <span
                             class="main-nav-dropdown__item-icon icon-chevron-right-charcoal icon-small"
                           ></span>
@@ -406,7 +406,7 @@
                           data-name="NAV_SUBSECTION_PARENT"
                           data-detail='&#x7B;"childListId"&#x3A;"subject-business"&#x7D;'
                         >
-                          <span>Business</span>
+                          <span>व्यवसाय</span>
                           <span
                             class="main-nav-dropdown__item-icon icon-chevron-right-charcoal icon-small"
                           ></span>
@@ -422,7 +422,7 @@
                           data-name="NAV_SUBSECTION_PARENT"
                           data-detail='&#x7B;"childListId"&#x3A;"subject-humanities"&#x7D;'
                         >
-                          <span>Humanities</span>
+                          <span>मानविकी</span>
                           <span
                             class="main-nav-dropdown__item-icon icon-chevron-right-charcoal icon-small"
                           ></span>
@@ -438,7 +438,7 @@
                           data-name="NAV_SUBSECTION_PARENT"
                           data-detail='&#x7B;"childListId"&#x3A;"subject-engineering"&#x7D;'
                         >
-                          <span>Engineering</span>
+                          <span>अभियांत्रिकी</span>
                           <span
                             class="main-nav-dropdown__item-icon icon-chevron-right-charcoal icon-small"
                           ></span>
@@ -454,7 +454,7 @@
                           data-name="NAV_SUBSECTION_PARENT"
                           data-detail='&#x7B;"childListId"&#x3A;"subject-science"&#x7D;'
                         >
-                          <span>Science</span>
+                          <span>विज्ञान</span>
                           <span
                             class="main-nav-dropdown__item-icon icon-chevron-right-charcoal icon-small"
                           ></span>
@@ -470,7 +470,7 @@
                           data-name="NAV_SUBSECTION_PARENT"
                           data-detail='&#x7B;"childListId"&#x3A;"subject-education"&#x7D;'
                         >
-                          <span>Education &amp; Teaching</span>
+                          <span>शिक्षा &amp; शिक्षण</span>
                           <span
                             class="main-nav-dropdown__item-icon icon-chevron-right-charcoal icon-small"
                           ></span>
@@ -486,7 +486,7 @@
                           data-name="NAV_SUBSECTION_PARENT"
                           data-detail='&#x7B;"childListId"&#x3A;"subject-social-sciences"&#x7D;'
                         >
-                          <span>Social Sciences</span>
+                          <span>सामाजिक विज्ञान</span>
                           <span
                             class="main-nav-dropdown__item-icon icon-chevron-right-charcoal icon-small"
                           ></span>
@@ -502,7 +502,7 @@
                           data-name="NAV_SUBSECTION_PARENT"
                           data-detail='&#x7B;"childListId"&#x3A;"subject-art-and-design"&#x7D;'
                         >
-                          <span>Art &amp; Design</span>
+                          <span>कला &amp; डिज़ाइन</span>
                           <span
                             class="main-nav-dropdown__item-icon icon-chevron-right-charcoal icon-small"
                           ></span>
@@ -518,7 +518,7 @@
                           data-name="NAV_SUBSECTION_PARENT"
                           data-detail='&#x7B;"childListId"&#x3A;"subject-data-science"&#x7D;'
                         >
-                          <span>Data Science</span>
+                          <span>डेटा विज्ञान</span>
                           <span
                             class="main-nav-dropdown__item-icon icon-chevron-right-charcoal icon-small"
                           ></span>
@@ -534,7 +534,7 @@
                           data-name="NAV_SUBSECTION_PARENT"
                           data-detail='&#x7B;"childListId"&#x3A;"subject-programming-and-software-development"&#x7D;'
                         >
-                          <span>Programming</span>
+                          <span>प्रोग्रामिंग</span>
                           <span
                             class="main-nav-dropdown__item-icon icon-chevron-right-charcoal icon-small"
                           ></span>
@@ -550,7 +550,7 @@
                           data-name="NAV_SUBSECTION_PARENT"
                           data-detail='&#x7B;"childListId"&#x3A;"subject-personal-development"&#x7D;'
                         >
-                          <span>Personal Development</span>
+                          <span>व्यक्तिगत विकास</span>
                           <span
                             class="main-nav-dropdown__item-icon icon-chevron-right-charcoal icon-small"
                           ></span>
@@ -566,7 +566,7 @@
                           data-name="NAV_SUBSECTION_PARENT"
                           data-detail='&#x7B;"childListId"&#x3A;"subject-infosec"&#x7D;'
                         >
-                          <span>Information Security (InfoSec)</span>
+                          <span>सूचना सुरक्षा</span>
                           <span
                             class="main-nav-dropdown__item-icon icon-chevron-right-charcoal icon-small"
                           ></span>
@@ -580,7 +580,7 @@
                       data-track-ga='&#x7B;"category"&#x3A;"nav_click","action"&#x3A;"subject","label"&#x3A;"view&#x20;all&#x20;subjects"&#x7D;'
                       href="subjects.html"
                       class="text-2 hover-no-underline weight-semi margin-vert-xsmall padding-left-medium padding-right-medium hidden large-up-block"
-                      >View all Subjects</a
+                      >सभी विषय देखें</a
                     >
                   </section>
 
@@ -594,7 +594,7 @@
                           data-track-props='&#x7B;"type"&#x3A;"University","title"&#x3A;"Universities"&#x7D;'
                           data-track-ga='&#x7B;"category"&#x3A;"nav_click","action"&#x3A;"university","label"&#x3A;"Universities"&#x7D;'
                         >
-                          <span class="weight-semi">Universities</span>
+                          <span class="weight-semi">विश्वविद्यालयों</span>
                         </a>
                       </li>
                       <li class="main-nav-dropdown__item">
@@ -604,7 +604,7 @@
                           data-track-ga='&#x7B;"category"&#x3A;"nav_click","action"&#x3A;"news","label"&#x3A;"mobile"&#x7D;'
                         >
                           <span class="block symbol-report" style="height: 18px"
-                            >The Report</span
+                            >रिपोर्ट</span
                           >
                         </a>
                       </li>
@@ -614,21 +614,20 @@
                   <p
                     class="small-down-hidden text-2 padding-left-medium padding-right-medium padding-vert-xxsmall"
                   >
-                    Courses from
+                    से पाठ्यक्रम
                     <a
                       data-track-ga='&#x7B;"category"&#x3A;"nav_click","action"&#x3A;"university","label"&#x3A;"1000&#x2B;&#x20;universities"&#x7D;'
                       data-track-click="nav_click"
                       data-track-props='&#x7B;"type"&#x3A;&#x20;"University",&#x20;"title"&#x3A;&#x20;"1000&#x2B;&#x20;universities"&#x7D;'
                       href="universities.html"
-                      >1000+ universities</a
+                      >1000+ विश्वविद्यालय</a
                     >
                   </p>
                 </div>
                 <div class="main-nav-dropdown__subsections">
                   <div
-                    class="main-nav-dropdown__subsection js-main-nav-subsection"
+                    class="main-nav-dropdown__subsection js-main-nav-subsection hidden"
                     data-list-id="rankings"
-                    hidden
                   >
                     <div
                       class="main-nav-dropdown__subsection-header large-up-hidden"
@@ -642,7 +641,7 @@
                       </button>
 
                       <h3 class="main-nav-dropdown__subsection-title">
-                        Rankings
+                        रैंकिंग
                       </h3>
                     </div>
 
@@ -683,7 +682,7 @@
                     <section class="main-nav-dropdown__section--with-header">
                       <div class="main-nav-dropdown__section-header">
                         <h3 class="main-nav-dropdown__section-heading">
-                          Best Courses
+                          सबसे अच्छा पाठ्यक्रम
                         </h3>
                       </div>
 
@@ -696,7 +695,7 @@
                             data-track-props='&#x7B;"type"&#x3A;"rankings","title"&#x3A;"Best&#x20;of&#x20;All&#x20;Time"&#x7D;'
                             data-track-ga='&#x7B;"category"&#x3A;"nav_click","action"&#x3A;"rankings","label"&#x3A;"Best&#x20;of&#x20;All&#x20;Time"&#x7D;'
                           >
-                            <span>Best of All Time</span>
+                            <span>सभी समय का सबसे अच्छा</span>
                           </a>
                         </li>
                         <li class="main-nav-dropdown__item">
@@ -707,7 +706,7 @@
                             data-track-props='&#x7B;"type"&#x3A;"rankings","title"&#x3A;"Best&#x20;of&#x20;the&#x20;Year&#x20;2022"&#x7D;'
                             data-track-ga='&#x7B;"category"&#x3A;"nav_click","action"&#x3A;"rankings","label"&#x3A;"Best&#x20;of&#x20;the&#x20;Year&#x20;2022"&#x7D;'
                           >
-                            <span>Best of the Year 2022</span>
+                            <span>वर्ष का सर्वश्रेष्ठ 2022</span>
                           </a>
                         </li>
                         <li class="main-nav-dropdown__item">
@@ -718,7 +717,7 @@
                             data-track-props='&#x7B;"type"&#x3A;"rankings","title"&#x3A;"Best&#x20;of&#x20;the&#x20;Year&#x20;2021"&#x7D;'
                             data-track-ga='&#x7B;"category"&#x3A;"nav_click","action"&#x3A;"rankings","label"&#x3A;"Best&#x20;of&#x20;the&#x20;Year&#x20;2021"&#x7D;'
                           >
-                            <span>Best of the Year 2021</span>
+                            <span>वर्ष 202 का सर्वश्रेष्ठ1</span>
                           </a>
                         </li>
                       </ul>
@@ -726,7 +725,7 @@
                     <section class="main-nav-dropdown__section--with-header">
                       <div class="main-nav-dropdown__section-header">
                         <h3 class="main-nav-dropdown__section-heading">
-                          Most Popular Courses
+                          सबसे लोकप्रिय पाठ्यक्रम
                         </h3>
                       </div>
 
@@ -739,7 +738,7 @@
                             data-track-props='&#x7B;"type"&#x3A;"rankings","title"&#x3A;"Most&#x20;Popular&#x20;of&#x20;All&#x20;Time"&#x7D;'
                             data-track-ga='&#x7B;"category"&#x3A;"nav_click","action"&#x3A;"rankings","label"&#x3A;"Most&#x20;Popular&#x20;of&#x20;All&#x20;Time"&#x7D;'
                           >
-                            <span>Most Popular of All Time</span>
+                            <span>सभी समय के सबसे लोकप्रिय</span>
                           </a>
                         </li>
                         <li class="main-nav-dropdown__item">
@@ -750,7 +749,7 @@
                             data-track-props='&#x7B;"type"&#x3A;"rankings","title"&#x3A;"Most&#x20;Popular&#x20;of&#x20;the&#x20;Year&#x20;2022"&#x7D;'
                             data-track-ga='&#x7B;"category"&#x3A;"nav_click","action"&#x3A;"rankings","label"&#x3A;"Most&#x20;Popular&#x20;of&#x20;the&#x20;Year&#x20;2022"&#x7D;'
                           >
-                            <span>Most Popular of the Year 2022</span>
+                            <span>वर्ष 2022 के सबसे लोकप्रिय</span>
                           </a>
                         </li>
                         <li class="main-nav-dropdown__item">
@@ -761,7 +760,7 @@
                             data-track-props='&#x7B;"type"&#x3A;"rankings","title"&#x3A;"Most&#x20;Popular&#x20;of&#x20;the&#x20;Year&#x20;2021"&#x7D;'
                             data-track-ga='&#x7B;"category"&#x3A;"nav_click","action"&#x3A;"rankings","label"&#x3A;"Most&#x20;Popular&#x20;of&#x20;the&#x20;Year&#x20;2021"&#x7D;'
                           >
-                            <span>Most Popular of the Year 2021</span>
+                            <span>वर्ष 2021 के सबसे लोकप्रिय</span>
                           </a>
                         </li>
                       </ul>
@@ -785,7 +784,7 @@
                       </button>
 
                       <h3 class="main-nav-dropdown__subsection-title">
-                        Collections
+                        संग्रह
                       </h3>
                     </div>
 
@@ -856,7 +855,7 @@
                     <section class="main-nav-dropdown__section--with-header">
                       <div class="main-nav-dropdown__section-header">
                         <h3 class="main-nav-dropdown__section-heading">
-                          Monthly Course Reports
+                          मासिक पाठ्यक्रम रिपोर्ट
                         </h3>
                       </div>
 
@@ -869,7 +868,7 @@
                             data-track-props='&#x7B;"type"&#x3A;"collections","title"&#x3A;"Starting&#x20;this&#x20;Month"&#x7D;'
                             data-track-ga='&#x7B;"category"&#x3A;"nav_click","action"&#x3A;"collections","label"&#x3A;"Starting&#x20;this&#x20;Month"&#x7D;'
                           >
-                            <span>Starting this Month</span>
+                            <span>इस महीने से शुरू</span>
                           </a>
                         </li>
                         <li class="main-nav-dropdown__item">
@@ -880,7 +879,7 @@
                             data-track-props='&#x7B;"type"&#x3A;"collections","title"&#x3A;"New&#x20;Online&#x20;Courses"&#x7D;'
                             data-track-ga='&#x7B;"category"&#x3A;"nav_click","action"&#x3A;"collections","label"&#x3A;"New&#x20;Online&#x20;Courses"&#x7D;'
                           >
-                            <span>New Online Courses</span>
+                            <span>नए ऑनलाइन पाठ्यक्रम</span>
                           </a>
                         </li>
                         <li class="main-nav-dropdown__item">
@@ -891,7 +890,7 @@
                             data-track-props='&#x7B;"type"&#x3A;"collections","title"&#x3A;"Most&#x20;Popular"&#x7D;'
                             data-track-ga='&#x7B;"category"&#x3A;"nav_click","action"&#x3A;"collections","label"&#x3A;"Most&#x20;Popular"&#x7D;'
                           >
-                            <span>Most Popular</span>
+                            <span>सबसे लोकप्रिय</span>
                           </a>
                         </li>
                       </ul>
@@ -915,7 +914,7 @@
                       </button>
 
                       <h3 class="main-nav-dropdown__subsection-title">
-                        Computer Science
+                        कंप्यूटर विज्ञान
                       </h3>
                     </div>
 
@@ -929,7 +928,7 @@
                             data-track-props='&#x7B;"type"&#x3A;"Subject","title"&#x3A;"Artificial&#x20;Intelligence"&#x7D;'
                             data-track-ga='&#x7B;"category"&#x3A;"nav_click","action"&#x3A;"subject-child","label"&#x3A;"Artificial&#x20;Intelligence"&#x7D;'
                           >
-                            <span>Artificial Intelligence</span>
+                            <span>कृत्रिम होशियारी</span>
                           </a>
                         </li>
                         <li class="main-nav-dropdown__item">
@@ -940,7 +939,7 @@
                             data-track-props='&#x7B;"type"&#x3A;"Subject","title"&#x3A;"Algorithms&#x20;and&#x20;Data&#x20;Structures"&#x7D;'
                             data-track-ga='&#x7B;"category"&#x3A;"nav_click","action"&#x3A;"subject-child","label"&#x3A;"Algorithms&#x20;and&#x20;Data&#x20;Structures"&#x7D;'
                           >
-                            <span>Algorithms and Data Structures</span>
+                            <span>एल्गोरिदम और डेटा संरचनाएं</span>
                           </a>
                         </li>
                         <li class="main-nav-dropdown__item">
@@ -951,7 +950,7 @@
                             data-track-props='&#x7B;"type"&#x3A;"Subject","title"&#x3A;"Internet&#x20;of&#x20;Things"&#x7D;'
                             data-track-ga='&#x7B;"category"&#x3A;"nav_click","action"&#x3A;"subject-child","label"&#x3A;"Internet&#x20;of&#x20;Things"&#x7D;'
                           >
-                            <span>Internet of Things</span>
+                            <span>चीजों की इंटरनेट</span>
                           </a>
                         </li>
                         <li class="main-nav-dropdown__item">
@@ -962,7 +961,7 @@
                             data-track-props='&#x7B;"type"&#x3A;"Subject","title"&#x3A;"Information&#x20;Technology"&#x7D;'
                             data-track-ga='&#x7B;"category"&#x3A;"nav_click","action"&#x3A;"subject-child","label"&#x3A;"Information&#x20;Technology"&#x7D;'
                           >
-                            <span>Information Technology</span>
+                            <span>सूचान प्रौद्योगिकी</span>
                           </a>
                         </li>
                         <li class="main-nav-dropdown__item">
@@ -973,7 +972,7 @@
                             data-track-props='&#x7B;"type"&#x3A;"Subject","title"&#x3A;"Computer&#x20;Networking"&#x7D;'
                             data-track-ga='&#x7B;"category"&#x3A;"nav_click","action"&#x3A;"subject-child","label"&#x3A;"Computer&#x20;Networking"&#x7D;'
                           >
-                            <span>Computer Networking</span>
+                            <span>कम्प्यूटर नेट्वर्किंग</span>
                           </a>
                         </li>
                         <li class="main-nav-dropdown__item">
@@ -984,7 +983,7 @@
                             data-track-props='&#x7B;"type"&#x3A;"Subject","title"&#x3A;"Machine&#x20;Learning"&#x7D;'
                             data-track-ga='&#x7B;"category"&#x3A;"nav_click","action"&#x3A;"subject-child","label"&#x3A;"Machine&#x20;Learning"&#x7D;'
                           >
-                            <span>Machine Learning</span>
+                            <span>यंत्र अधिगम</span>
                           </a>
                         </li>
                         <li class="main-nav-dropdown__item">
@@ -995,7 +994,7 @@
                             data-track-props='&#x7B;"type"&#x3A;"Subject","title"&#x3A;"DevOps"&#x7D;'
                             data-track-ga='&#x7B;"category"&#x3A;"nav_click","action"&#x3A;"subject-child","label"&#x3A;"DevOps"&#x7D;'
                           >
-                            <span>DevOps</span>
+                            <span>देवप्स</span>
                           </a>
                         </li>
                         <li class="main-nav-dropdown__item">
@@ -1006,7 +1005,7 @@
                             data-track-props='&#x7B;"type"&#x3A;"Subject","title"&#x3A;"Deep&#x20;Learning"&#x7D;'
                             data-track-ga='&#x7B;"category"&#x3A;"nav_click","action"&#x3A;"subject-child","label"&#x3A;"Deep&#x20;Learning"&#x7D;'
                           >
-                            <span>Deep Learning</span>
+                            <span>ध्यान लगा के पढ़ना या सीखना</span>
                           </a>
                         </li>
                         <li class="main-nav-dropdown__item">
@@ -1017,7 +1016,7 @@
                             data-track-props='&#x7B;"type"&#x3A;"Subject","title"&#x3A;"Cryptography"&#x7D;'
                             data-track-ga='&#x7B;"category"&#x3A;"nav_click","action"&#x3A;"subject-child","label"&#x3A;"Cryptography"&#x7D;'
                           >
-                            <span>Cryptography</span>
+                            <span>क्रिप्टोग्राफी</span>
                           </a>
                         </li>
                         <li class="main-nav-dropdown__item">
@@ -1028,7 +1027,7 @@
                             data-track-props='&#x7B;"type"&#x3A;"Subject","title"&#x3A;"Quantum&#x20;Computing"&#x7D;'
                             data-track-ga='&#x7B;"category"&#x3A;"nav_click","action"&#x3A;"subject-child","label"&#x3A;"Quantum&#x20;Computing"&#x7D;'
                           >
-                            <span>Quantum Computing</span>
+                            <span>क्वांटम कम्प्यूटिंग</span>
                           </a>
                         </li>
                         <li class="main-nav-dropdown__item">
@@ -1039,7 +1038,7 @@
                             data-track-props='&#x7B;"type"&#x3A;"Subject","title"&#x3A;"Human-Computer&#x20;Interaction&#x20;&#x28;HCI&#x29;"&#x7D;'
                             data-track-ga='&#x7B;"category"&#x3A;"nav_click","action"&#x3A;"subject-child","label"&#x3A;"Human-Computer&#x20;Interaction&#x20;&#x28;HCI&#x29;"&#x7D;'
                           >
-                            <span>Human-Computer Interaction (HCI)</span>
+                            <span>मानव-कंप्यूटर बातचीत (एचसीआई)</span>
                           </a>
                         </li>
                         <li class="main-nav-dropdown__item">
@@ -1050,7 +1049,7 @@
                             data-track-props='&#x7B;"type"&#x3A;"Subject","title"&#x3A;"Distributed&#x20;Systems"&#x7D;'
                             data-track-ga='&#x7B;"category"&#x3A;"nav_click","action"&#x3A;"subject-child","label"&#x3A;"Distributed&#x20;Systems"&#x7D;'
                           >
-                            <span>Distributed Systems</span>
+                            <span>वितरित प्रणाली</span>
                           </a>
                         </li>
                         <li class="main-nav-dropdown__item">
@@ -1061,7 +1060,7 @@
                             data-track-props='&#x7B;"type"&#x3A;"Subject","title"&#x3A;"Blockchain&#x20;Development"&#x7D;'
                             data-track-ga='&#x7B;"category"&#x3A;"nav_click","action"&#x3A;"subject-child","label"&#x3A;"Blockchain&#x20;Development"&#x7D;'
                           >
-                            <span>Blockchain Development</span>
+                            <span>ब्लॉकचेन विकास</span>
                           </a>
                         </li>
                         <li class="main-nav-dropdown__item">
@@ -1072,7 +1071,7 @@
                             data-track-props='&#x7B;"type"&#x3A;"Subject","title"&#x3A;"Operating&#x20;Systems"&#x7D;'
                             data-track-ga='&#x7B;"category"&#x3A;"nav_click","action"&#x3A;"subject-child","label"&#x3A;"Operating&#x20;Systems"&#x7D;'
                           >
-                            <span>Operating Systems</span>
+                            <span>ऑपरेटिंग सिस्टम</span>
                           </a>
                         </li>
                         <li class="main-nav-dropdown__item">
@@ -1083,7 +1082,7 @@
                             data-track-props='&#x7B;"type"&#x3A;"Subject","title"&#x3A;"Computer&#x20;Graphics"&#x7D;'
                             data-track-ga='&#x7B;"category"&#x3A;"nav_click","action"&#x3A;"subject-child","label"&#x3A;"Computer&#x20;Graphics"&#x7D;'
                           >
-                            <span>Computer Graphics</span>
+                            <span>कंप्यूटर चित्रलेख</span>
                           </a>
                         </li>
                         <li class="main-nav-dropdown__item">
@@ -1094,7 +1093,7 @@
                             data-track-props='&#x7B;"type"&#x3A;"Subject","title"&#x3A;"Computer&#x20;Science"&#x7D;'
                             data-track-ga='&#x7B;"category"&#x3A;"nav_click","action"&#x3A;"subject","label"&#x3A;"Computer&#x20;Science"&#x7D;'
                           >
-                            <span>View all Computer Science</span>
+                            <span>सभी कंप्यूटर विज्ञान देखें</span>
                           </a>
                         </li>
                       </ul>
@@ -1118,7 +1117,7 @@
                       </button>
 
                       <h3 class="main-nav-dropdown__subsection-title">
-                        Health &amp; Medicine
+                        स्वास्थ्य &amp; दवा
                       </h3>
                     </div>
 
@@ -1132,7 +1131,7 @@
                             data-track-props='&#x7B;"type"&#x3A;"Subject","title"&#x3A;"Nutrition&#x20;&amp;&#x20;Wellness"&#x7D;'
                             data-track-ga='&#x7B;"category"&#x3A;"nav_click","action"&#x3A;"subject-child","label"&#x3A;"Nutrition&#x20;&amp;&#x20;Wellness"&#x7D;'
                           >
-                            <span>Nutrition &amp; Wellness</span>
+                            <span>पोषण &amp; कल्याण</span>
                           </a>
                         </li>
                         <li class="main-nav-dropdown__item">
@@ -1143,7 +1142,7 @@
                             data-track-props='&#x7B;"type"&#x3A;"Subject","title"&#x3A;"Disease&#x20;&amp;&#x20;Disorders"&#x7D;'
                             data-track-ga='&#x7B;"category"&#x3A;"nav_click","action"&#x3A;"subject-child","label"&#x3A;"Disease&#x20;&amp;&#x20;Disorders"&#x7D;'
                           >
-                            <span>Disease &amp; Disorders</span>
+                            <span>बीमारी &amp;विकारों</span>
                           </a>
                         </li>
                         <li class="main-nav-dropdown__item">
@@ -1154,7 +1153,7 @@
                             data-track-props='&#x7B;"type"&#x3A;"Subject","title"&#x3A;"Public&#x20;Health"&#x7D;'
                             data-track-ga='&#x7B;"category"&#x3A;"nav_click","action"&#x3A;"subject-child","label"&#x3A;"Public&#x20;Health"&#x7D;'
                           >
-                            <span>Public Health</span>
+                            <span>सार्वजनिक स्वास्थ्य</span>
                           </a>
                         </li>
                         <li class="main-nav-dropdown__item">
@@ -1165,7 +1164,7 @@
                             data-track-props='&#x7B;"type"&#x3A;"Subject","title"&#x3A;"Health&#x20;Care"&#x7D;'
                             data-track-ga='&#x7B;"category"&#x3A;"nav_click","action"&#x3A;"subject-child","label"&#x3A;"Health&#x20;Care"&#x7D;'
                           >
-                            <span>Health Care</span>
+                            <span>स्वास्थ्य देखभाल</span>
                           </a>
                         </li>
                         <li class="main-nav-dropdown__item">
@@ -1176,7 +1175,7 @@
                             data-track-props='&#x7B;"type"&#x3A;"Subject","title"&#x3A;"Nursing"&#x7D;'
                             data-track-ga='&#x7B;"category"&#x3A;"nav_click","action"&#x3A;"subject-child","label"&#x3A;"Nursing"&#x7D;'
                           >
-                            <span>Nursing</span>
+                            <span>नर्सिंग</span>
                           </a>
                         </li>
                         <li class="main-nav-dropdown__item">
@@ -1187,7 +1186,7 @@
                             data-track-props='&#x7B;"type"&#x3A;"Subject","title"&#x3A;"Anatomy"&#x7D;'
                             data-track-ga='&#x7B;"category"&#x3A;"nav_click","action"&#x3A;"subject-child","label"&#x3A;"Anatomy"&#x7D;'
                           >
-                            <span>Anatomy</span>
+                            <span>शरीर रचना</span>
                           </a>
                         </li>
                         <li class="main-nav-dropdown__item">
@@ -1198,7 +1197,7 @@
                             data-track-props='&#x7B;"type"&#x3A;"Subject","title"&#x3A;"Veterinary&#x20;Science"&#x7D;'
                             data-track-ga='&#x7B;"category"&#x3A;"nav_click","action"&#x3A;"subject-child","label"&#x3A;"Veterinary&#x20;Science"&#x7D;'
                           >
-                            <span>Veterinary Science</span>
+                            <span>पशु चिकित्सा विज्ञान</span>
                           </a>
                         </li>
                         <li class="main-nav-dropdown__item">
@@ -1209,7 +1208,7 @@
                             data-track-props='&#x7B;"type"&#x3A;"Subject","title"&#x3A;"Continuing&#x20;Medical&#x20;Education&#x20;&#x28;CME&#x29;"&#x7D;'
                             data-track-ga='&#x7B;"category"&#x3A;"nav_click","action"&#x3A;"subject-child","label"&#x3A;"Continuing&#x20;Medical&#x20;Education&#x20;&#x28;CME&#x29;"&#x7D;'
                           >
-                            <span>Continuing Medical Education (CME)</span>
+                            <span>सतत चिकित्सा शिक्षा</span>
                           </a>
                         </li>
                         <li class="main-nav-dropdown__item">
@@ -1220,7 +1219,7 @@
                             data-track-props='&#x7B;"type"&#x3A;"Subject","title"&#x3A;"Health&#x20;&amp;&#x20;Medicine"&#x7D;'
                             data-track-ga='&#x7B;"category"&#x3A;"nav_click","action"&#x3A;"subject","label"&#x3A;"Health&#x20;&amp;&#x20;Medicine"&#x7D;'
                           >
-                            <span>View all Health &amp; Medicine</span>
+                            <span>सभी स्वास्थ्य देखें &amp; दवा</span>
                           </a>
                         </li>
                       </ul>
@@ -1244,7 +1243,7 @@
                       </button>
 
                       <h3 class="main-nav-dropdown__subsection-title">
-                        Mathematics
+                        अंक शास्त्र
                       </h3>
                     </div>
 
@@ -1258,7 +1257,7 @@
                             data-track-props='&#x7B;"type"&#x3A;"Subject","title"&#x3A;"Statistics&#x20;&amp;&#x20;Probability"&#x7D;'
                             data-track-ga='&#x7B;"category"&#x3A;"nav_click","action"&#x3A;"subject-child","label"&#x3A;"Statistics&#x20;&amp;&#x20;Probability"&#x7D;'
                           >
-                            <span>Statistics &amp; Probability</span>
+                            <span>आंकड़े &amp; संभावना </span>
                           </a>
                         </li>
                         <li class="main-nav-dropdown__item">
@@ -1269,7 +1268,7 @@
                             data-track-props='&#x7B;"type"&#x3A;"Subject","title"&#x3A;"Foundations&#x20;of&#x20;Mathematics"&#x7D;'
                             data-track-ga='&#x7B;"category"&#x3A;"nav_click","action"&#x3A;"subject-child","label"&#x3A;"Foundations&#x20;of&#x20;Mathematics"&#x7D;'
                           >
-                            <span>Foundations of Mathematics</span>
+                            <span>गणित की नींव</span>
                           </a>
                         </li>
                         <li class="main-nav-dropdown__item">
@@ -1280,7 +1279,7 @@
                             data-track-props='&#x7B;"type"&#x3A;"Subject","title"&#x3A;"Calculus"&#x7D;'
                             data-track-ga='&#x7B;"category"&#x3A;"nav_click","action"&#x3A;"subject-child","label"&#x3A;"Calculus"&#x7D;'
                           >
-                            <span>Calculus</span>
+                            <span>गणना</span>
                           </a>
                         </li>
                         <li class="main-nav-dropdown__item">
@@ -1291,7 +1290,7 @@
                             data-track-props='&#x7B;"type"&#x3A;"Subject","title"&#x3A;"Discrete&#x20;Mathematics"&#x7D;'
                             data-track-ga='&#x7B;"category"&#x3A;"nav_click","action"&#x3A;"subject-child","label"&#x3A;"Discrete&#x20;Mathematics"&#x7D;'
                           >
-                            <span>Discrete Mathematics</span>
+                            <span>गणित पृथक करें</span>
                           </a>
                         </li>
                         <li class="main-nav-dropdown__item">
@@ -1302,7 +1301,7 @@
                             data-track-props='&#x7B;"type"&#x3A;"Subject","title"&#x3A;"Trigonometry"&#x7D;'
                             data-track-ga='&#x7B;"category"&#x3A;"nav_click","action"&#x3A;"subject-child","label"&#x3A;"Trigonometry"&#x7D;'
                           >
-                            <span>Trigonometry</span>
+                            <span>त्रिकोणमिति</span>
                           </a>
                         </li>
                         <li class="main-nav-dropdown__item">
@@ -1313,7 +1312,7 @@
                             data-track-props='&#x7B;"type"&#x3A;"Subject","title"&#x3A;"Geometry"&#x7D;'
                             data-track-ga='&#x7B;"category"&#x3A;"nav_click","action"&#x3A;"subject-child","label"&#x3A;"Geometry"&#x7D;'
                           >
-                            <span>Geometry</span>
+                            <span>ज्यामिति</span>
                           </a>
                         </li>
                         <li class="main-nav-dropdown__item">
@@ -1324,7 +1323,7 @@
                             data-track-props='&#x7B;"type"&#x3A;"Subject","title"&#x3A;"Algebra"&#x7D;'
                             data-track-ga='&#x7B;"category"&#x3A;"nav_click","action"&#x3A;"subject-child","label"&#x3A;"Algebra"&#x7D;'
                           >
-                            <span>Algebra</span>
+                            <span>बीजगणित</span>
                           </a>
                         </li>
                         <li class="main-nav-dropdown__item">
@@ -1335,7 +1334,7 @@
                             data-track-props='&#x7B;"type"&#x3A;"Subject","title"&#x3A;"Precalculus"&#x7D;'
                             data-track-ga='&#x7B;"category"&#x3A;"nav_click","action"&#x3A;"subject-child","label"&#x3A;"Precalculus"&#x7D;'
                           >
-                            <span>Precalculus</span>
+                            <span>प्रल्कुलस</span>
                           </a>
                         </li>
                         <li class="main-nav-dropdown__item">
@@ -1346,7 +1345,7 @@
                             data-track-props='&#x7B;"type"&#x3A;"Subject","title"&#x3A;"Number&#x20;Theory"&#x7D;'
                             data-track-ga='&#x7B;"category"&#x3A;"nav_click","action"&#x3A;"subject-child","label"&#x3A;"Number&#x20;Theory"&#x7D;'
                           >
-                            <span>Number Theory</span>
+                            <span>संख्या सिद्धांत</span>
                           </a>
                         </li>
                         <li class="main-nav-dropdown__item">
@@ -1357,7 +1356,7 @@
                             data-track-props='&#x7B;"type"&#x3A;"Subject","title"&#x3A;"Combinatorics"&#x7D;'
                             data-track-ga='&#x7B;"category"&#x3A;"nav_click","action"&#x3A;"subject-child","label"&#x3A;"Combinatorics"&#x7D;'
                           >
-                            <span>Combinatorics</span>
+                            <span>साहचर्य</span>
                           </a>
                         </li>
                         <li class="main-nav-dropdown__item">
@@ -1368,7 +1367,7 @@
                             data-track-props='&#x7B;"type"&#x3A;"Subject","title"&#x3A;"Mathematical&#x20;logic"&#x7D;'
                             data-track-ga='&#x7B;"category"&#x3A;"nav_click","action"&#x3A;"subject-child","label"&#x3A;"Mathematical&#x20;logic"&#x7D;'
                           >
-                            <span>Mathematical logic</span>
+                            <span>गणितीय तर्क</span>
                           </a>
                         </li>
                         <li class="main-nav-dropdown__item">
@@ -1379,7 +1378,7 @@
                             data-track-props='&#x7B;"type"&#x3A;"Subject","title"&#x3A;"Linear&#x20;Programming"&#x7D;'
                             data-track-ga='&#x7B;"category"&#x3A;"nav_click","action"&#x3A;"subject-child","label"&#x3A;"Linear&#x20;Programming"&#x7D;'
                           >
-                            <span>Linear Programming</span>
+                            <span>रैखिक प्रोग्रामिंग</span>
                           </a>
                         </li>
                         <li class="main-nav-dropdown__item">
@@ -1390,7 +1389,7 @@
                             data-track-props='&#x7B;"type"&#x3A;"Subject","title"&#x3A;"Mathematics"&#x7D;'
                             data-track-ga='&#x7B;"category"&#x3A;"nav_click","action"&#x3A;"subject","label"&#x3A;"Mathematics"&#x7D;'
                           >
-                            <span>View all Mathematics</span>
+                            <span>सभी गणित देखें</span>
                           </a>
                         </li>
                       </ul>
@@ -1414,7 +1413,7 @@
                       </button>
 
                       <h3 class="main-nav-dropdown__subsection-title">
-                        Business
+                        व्यवसाय
                       </h3>
                     </div>
 
@@ -1428,7 +1427,7 @@
                             data-track-props='&#x7B;"type"&#x3A;"Subject","title"&#x3A;"Management&#x20;&amp;&#x20;Leadership"&#x7D;'
                             data-track-ga='&#x7B;"category"&#x3A;"nav_click","action"&#x3A;"subject-child","label"&#x3A;"Management&#x20;&amp;&#x20;Leadership"&#x7D;'
                           >
-                            <span>Management &amp; Leadership</span>
+                            <span>प्रबंध &amp; नेतृत्व</span>
                           </a>
                         </li>
                         <li class="main-nav-dropdown__item">
@@ -1439,7 +1438,7 @@
                             data-track-props='&#x7B;"type"&#x3A;"Subject","title"&#x3A;"Finance"&#x7D;'
                             data-track-ga='&#x7B;"category"&#x3A;"nav_click","action"&#x3A;"subject-child","label"&#x3A;"Finance"&#x7D;'
                           >
-                            <span>Finance</span>
+                            <span>वित्त</span>
                           </a>
                         </li>
                         <li class="main-nav-dropdown__item">
@@ -1450,7 +1449,7 @@
                             data-track-props='&#x7B;"type"&#x3A;"Subject","title"&#x3A;"Entrepreneurship"&#x7D;'
                             data-track-ga='&#x7B;"category"&#x3A;"nav_click","action"&#x3A;"subject-child","label"&#x3A;"Entrepreneurship"&#x7D;'
                           >
-                            <span>Entrepreneurship</span>
+                            <span>उद्यमशीलता</span>
                           </a>
                         </li>
                         <li class="main-nav-dropdown__item">
@@ -1461,7 +1460,7 @@
                             data-track-props='&#x7B;"type"&#x3A;"Subject","title"&#x3A;"Marketing"&#x7D;'
                             data-track-ga='&#x7B;"category"&#x3A;"nav_click","action"&#x3A;"subject-child","label"&#x3A;"Marketing"&#x7D;'
                           >
-                            <span>Marketing</span>
+                            <span>विपणन</span>
                           </a>
                         </li>
                         <li class="main-nav-dropdown__item">
@@ -1472,7 +1471,7 @@
                             data-track-props='&#x7B;"type"&#x3A;"Subject","title"&#x3A;"Strategic&#x20;Management"&#x7D;'
                             data-track-ga='&#x7B;"category"&#x3A;"nav_click","action"&#x3A;"subject-child","label"&#x3A;"Strategic&#x20;Management"&#x7D;'
                           >
-                            <span>Strategic Management</span>
+                            <span>कूटनीतिक प्रबंधन</span>
                           </a>
                         </li>
                         <li class="main-nav-dropdown__item">
@@ -1483,7 +1482,7 @@
                             data-track-props='&#x7B;"type"&#x3A;"Subject","title"&#x3A;"Industry&#x20;Specific"&#x7D;'
                             data-track-ga='&#x7B;"category"&#x3A;"nav_click","action"&#x3A;"subject-child","label"&#x3A;"Industry&#x20;Specific"&#x7D;'
                           >
-                            <span>Industry Specific</span>
+                            <span>उद्योग विशिष्ट</span>
                           </a>
                         </li>
                         <li class="main-nav-dropdown__item">
@@ -1494,7 +1493,7 @@
                             data-track-props='&#x7B;"type"&#x3A;"Subject","title"&#x3A;"Business&#x20;Intelligence"&#x7D;'
                             data-track-ga='&#x7B;"category"&#x3A;"nav_click","action"&#x3A;"subject-child","label"&#x3A;"Business&#x20;Intelligence"&#x7D;'
                           >
-                            <span>Business Intelligence</span>
+                            <span>व्यापारिक सूचना</span>
                           </a>
                         </li>
                         <li class="main-nav-dropdown__item">
@@ -1505,7 +1504,7 @@
                             data-track-props='&#x7B;"type"&#x3A;"Subject","title"&#x3A;"Accounting"&#x7D;'
                             data-track-ga='&#x7B;"category"&#x3A;"nav_click","action"&#x3A;"subject-child","label"&#x3A;"Accounting"&#x7D;'
                           >
-                            <span>Accounting</span>
+                            <span>लेखांकन</span>
                           </a>
                         </li>
                         <li class="main-nav-dropdown__item">
@@ -1516,7 +1515,7 @@
                             data-track-props='&#x7B;"type"&#x3A;"Subject","title"&#x3A;"Human&#x20;Resources"&#x7D;'
                             data-track-ga='&#x7B;"category"&#x3A;"nav_click","action"&#x3A;"subject-child","label"&#x3A;"Human&#x20;Resources"&#x7D;'
                           >
-                            <span>Human Resources</span>
+                            <span>मानव संसाधन</span>
                           </a>
                         </li>
                         <li class="main-nav-dropdown__item">
@@ -1527,7 +1526,7 @@
                             data-track-props='&#x7B;"type"&#x3A;"Subject","title"&#x3A;"Project&#x20;Management"&#x7D;'
                             data-track-ga='&#x7B;"category"&#x3A;"nav_click","action"&#x3A;"subject-child","label"&#x3A;"Project&#x20;Management"&#x7D;'
                           >
-                            <span>Project Management</span>
+                            <span>परियोजना प्रबंधन</span>
                           </a>
                         </li>
                         <li class="main-nav-dropdown__item">
@@ -1538,7 +1537,7 @@
                             data-track-props='&#x7B;"type"&#x3A;"Subject","title"&#x3A;"Sales"&#x7D;'
                             data-track-ga='&#x7B;"category"&#x3A;"nav_click","action"&#x3A;"subject-child","label"&#x3A;"Sales"&#x7D;'
                           >
-                            <span>Sales</span>
+                            <span>बिक्री</span>
                           </a>
                         </li>
                         <li class="main-nav-dropdown__item">
@@ -1549,7 +1548,7 @@
                             data-track-props='&#x7B;"type"&#x3A;"Subject","title"&#x3A;"Design&#x20;Thinking"&#x7D;'
                             data-track-ga='&#x7B;"category"&#x3A;"nav_click","action"&#x3A;"subject-child","label"&#x3A;"Design&#x20;Thinking"&#x7D;'
                           >
-                            <span>Design Thinking</span>
+                            <span>सोच को आकार दें</span>
                           </a>
                         </li>
                         <li class="main-nav-dropdown__item">
@@ -1560,7 +1559,7 @@
                             data-track-props='&#x7B;"type"&#x3A;"Subject","title"&#x3A;"Business&#x20;Software"&#x7D;'
                             data-track-ga='&#x7B;"category"&#x3A;"nav_click","action"&#x3A;"subject-child","label"&#x3A;"Business&#x20;Software"&#x7D;'
                           >
-                            <span>Business Software</span>
+                            <span>व्यवसाय सॉफ्टवेयर</span>
                           </a>
                         </li>
                         <li class="main-nav-dropdown__item">
@@ -1571,7 +1570,7 @@
                             data-track-props='&#x7B;"type"&#x3A;"Subject","title"&#x3A;"Risk&#x20;Management"&#x7D;'
                             data-track-ga='&#x7B;"category"&#x3A;"nav_click","action"&#x3A;"subject-child","label"&#x3A;"Risk&#x20;Management"&#x7D;'
                           >
-                            <span>Risk Management</span>
+                            <span>जोखिम प्रबंधन</span>
                           </a>
                         </li>
                         <li class="main-nav-dropdown__item">
@@ -1582,7 +1581,7 @@
                             data-track-props='&#x7B;"type"&#x3A;"Subject","title"&#x3A;"Corporate&#x20;Social&#x20;Responsibility"&#x7D;'
                             data-track-ga='&#x7B;"category"&#x3A;"nav_click","action"&#x3A;"subject-child","label"&#x3A;"Corporate&#x20;Social&#x20;Responsibility"&#x7D;'
                           >
-                            <span>Corporate Social Responsibility</span>
+                            <span>कॉर्पोरेट की सामाजिक जिम्मेदारी</span>
                           </a>
                         </li>
                         <li class="main-nav-dropdown__item">
@@ -1593,7 +1592,7 @@
                             data-track-props='&#x7B;"type"&#x3A;"Subject","title"&#x3A;"Customer&#x20;Service"&#x7D;'
                             data-track-ga='&#x7B;"category"&#x3A;"nav_click","action"&#x3A;"subject-child","label"&#x3A;"Customer&#x20;Service"&#x7D;'
                           >
-                            <span>Customer Service</span>
+                            <span>ग्राहक सेवा</span>
                           </a>
                         </li>
                         <li class="main-nav-dropdown__item">
@@ -1604,7 +1603,7 @@
                             data-track-props='&#x7B;"type"&#x3A;"Subject","title"&#x3A;"Nonprofit&#x20;Management"&#x7D;'
                             data-track-ga='&#x7B;"category"&#x3A;"nav_click","action"&#x3A;"subject-child","label"&#x3A;"Nonprofit&#x20;Management"&#x7D;'
                           >
-                            <span>Nonprofit Management</span>
+                            <span>गैर -लाभकारी प्रबंधन</span>
                           </a>
                         </li>
                         <li class="main-nav-dropdown__item">
@@ -1615,7 +1614,7 @@
                             data-track-props='&#x7B;"type"&#x3A;"Subject","title"&#x3A;"Innovation"&#x7D;'
                             data-track-ga='&#x7B;"category"&#x3A;"nav_click","action"&#x3A;"subject-child","label"&#x3A;"Innovation"&#x7D;'
                           >
-                            <span>Innovation</span>
+                            <span>नवाचार</span>
                           </a>
                         </li>
                         <li class="main-nav-dropdown__item">
@@ -1626,7 +1625,7 @@
                             data-track-props='&#x7B;"type"&#x3A;"Subject","title"&#x3A;"Operations&#x20;Management"&#x7D;'
                             data-track-ga='&#x7B;"category"&#x3A;"nav_click","action"&#x3A;"subject-child","label"&#x3A;"Operations&#x20;Management"&#x7D;'
                           >
-                            <span>Operations Management</span>
+                            <span>संचालन प्रबंधन</span>
                           </a>
                         </li>
                         <li class="main-nav-dropdown__item">
@@ -1637,7 +1636,7 @@
                             data-track-props='&#x7B;"type"&#x3A;"Subject","title"&#x3A;"Business"&#x7D;'
                             data-track-ga='&#x7B;"category"&#x3A;"nav_click","action"&#x3A;"subject","label"&#x3A;"Business"&#x7D;'
                           >
-                            <span>View all Business</span>
+                            <span>सभी व्यवसाय देखें</span>
                           </a>
                         </li>
                       </ul>
@@ -1661,7 +1660,7 @@
                       </button>
 
                       <h3 class="main-nav-dropdown__subsection-title">
-                        Humanities
+                        मानविकी
                       </h3>
                     </div>
 
@@ -1675,7 +1674,7 @@
                             data-track-props='&#x7B;"type"&#x3A;"Subject","title"&#x3A;"History"&#x7D;'
                             data-track-ga='&#x7B;"category"&#x3A;"nav_click","action"&#x3A;"subject-child","label"&#x3A;"History"&#x7D;'
                           >
-                            <span>History</span>
+                            <span>इतिहास</span>
                           </a>
                         </li>
                         <li class="main-nav-dropdown__item">
@@ -1686,7 +1685,7 @@
                             data-track-props='&#x7B;"type"&#x3A;"Subject","title"&#x3A;"Literature"&#x7D;'
                             data-track-ga='&#x7B;"category"&#x3A;"nav_click","action"&#x3A;"subject-child","label"&#x3A;"Literature"&#x7D;'
                           >
-                            <span>Literature</span>
+                            <span>साहित्य</span>
                           </a>
                         </li>
                         <li class="main-nav-dropdown__item">
@@ -1697,7 +1696,7 @@
                             data-track-props='&#x7B;"type"&#x3A;"Subject","title"&#x3A;"Language&#x20;Learning"&#x7D;'
                             data-track-ga='&#x7B;"category"&#x3A;"nav_click","action"&#x3A;"subject-child","label"&#x3A;"Language&#x20;Learning"&#x7D;'
                           >
-                            <span>Language Learning</span>
+                            <span>भाषा सीखने</span>
                           </a>
                         </li>
                         <li class="main-nav-dropdown__item">
@@ -1708,7 +1707,7 @@
                             data-track-props='&#x7B;"type"&#x3A;"Subject","title"&#x3A;"Grammar&#x20;&amp;&#x20;Writing"&#x7D;'
                             data-track-ga='&#x7B;"category"&#x3A;"nav_click","action"&#x3A;"subject-child","label"&#x3A;"Grammar&#x20;&amp;&#x20;Writing"&#x7D;'
                           >
-                            <span>Grammar &amp; Writing</span>
+                            <span>व्याकरण &amp; लिखना</span>
                           </a>
                         </li>
                         <li class="main-nav-dropdown__item">
@@ -1719,7 +1718,7 @@
                             data-track-props='&#x7B;"type"&#x3A;"Subject","title"&#x3A;"Philosophy"&#x7D;'
                             data-track-ga='&#x7B;"category"&#x3A;"nav_click","action"&#x3A;"subject-child","label"&#x3A;"Philosophy"&#x7D;'
                           >
-                            <span>Philosophy</span>
+                            <span>दर्शन</span>
                           </a>
                         </li>
                         <li class="main-nav-dropdown__item">
@@ -1730,7 +1729,7 @@
                             data-track-props='&#x7B;"type"&#x3A;"Subject","title"&#x3A;"Religion"&#x7D;'
                             data-track-ga='&#x7B;"category"&#x3A;"nav_click","action"&#x3A;"subject-child","label"&#x3A;"Religion"&#x7D;'
                           >
-                            <span>Religion</span>
+                            <span>धर्म</span>
                           </a>
                         </li>
                         <li class="main-nav-dropdown__item">
@@ -1741,7 +1740,7 @@
                             data-track-props='&#x7B;"type"&#x3A;"Subject","title"&#x3A;"ESL"&#x7D;'
                             data-track-ga='&#x7B;"category"&#x3A;"nav_click","action"&#x3A;"subject-child","label"&#x3A;"ESL"&#x7D;'
                           >
-                            <span>ESL</span>
+                            <span>ईएसएल</span>
                           </a>
                         </li>
                         <li class="main-nav-dropdown__item">
@@ -1752,7 +1751,7 @@
                             data-track-props='&#x7B;"type"&#x3A;"Subject","title"&#x3A;"Culture"&#x7D;'
                             data-track-ga='&#x7B;"category"&#x3A;"nav_click","action"&#x3A;"subject-child","label"&#x3A;"Culture"&#x7D;'
                           >
-                            <span>Culture</span>
+                            <span>संस्कृति</span>
                           </a>
                         </li>
                         <li class="main-nav-dropdown__item">
@@ -1763,7 +1762,7 @@
                             data-track-props='&#x7B;"type"&#x3A;"Subject","title"&#x3A;"Sports"&#x7D;'
                             data-track-ga='&#x7B;"category"&#x3A;"nav_click","action"&#x3A;"subject-child","label"&#x3A;"Sports"&#x7D;'
                           >
-                            <span>Sports</span>
+                            <span>खेल</span>
                           </a>
                         </li>
                         <li class="main-nav-dropdown__item">
@@ -1774,7 +1773,7 @@
                             data-track-props='&#x7B;"type"&#x3A;"Subject","title"&#x3A;"Journalism"&#x7D;'
                             data-track-ga='&#x7B;"category"&#x3A;"nav_click","action"&#x3A;"subject-child","label"&#x3A;"Journalism"&#x7D;'
                           >
-                            <span>Journalism</span>
+                            <span>पत्रकारिता</span>
                           </a>
                         </li>
                         <li class="main-nav-dropdown__item">
@@ -1785,7 +1784,7 @@
                             data-track-props='&#x7B;"type"&#x3A;"Subject","title"&#x3A;"Ethics"&#x7D;'
                             data-track-ga='&#x7B;"category"&#x3A;"nav_click","action"&#x3A;"subject-child","label"&#x3A;"Ethics"&#x7D;'
                           >
-                            <span>Ethics</span>
+                            <span>नीति</span>
                           </a>
                         </li>
                         <li class="main-nav-dropdown__item">
@@ -1796,7 +1795,7 @@
                             data-track-props='&#x7B;"type"&#x3A;"Subject","title"&#x3A;"Linguistics"&#x7D;'
                             data-track-ga='&#x7B;"category"&#x3A;"nav_click","action"&#x3A;"subject-child","label"&#x3A;"Linguistics"&#x7D;'
                           >
-                            <span>Linguistics</span>
+                            <span>भाषा विज्ञान</span>
                           </a>
                         </li>
                         <li class="main-nav-dropdown__item">
@@ -1807,7 +1806,7 @@
                             data-track-props='&#x7B;"type"&#x3A;"Subject","title"&#x3A;"Food"&#x7D;'
                             data-track-ga='&#x7B;"category"&#x3A;"nav_click","action"&#x3A;"subject-child","label"&#x3A;"Food"&#x7D;'
                           >
-                            <span>Food</span>
+                            <span>खाना</span>
                           </a>
                         </li>
                         <li class="main-nav-dropdown__item">
@@ -1818,7 +1817,7 @@
                             data-track-props='&#x7B;"type"&#x3A;"Subject","title"&#x3A;"Library&#x20;Science"&#x7D;'
                             data-track-ga='&#x7B;"category"&#x3A;"nav_click","action"&#x3A;"subject-child","label"&#x3A;"Library&#x20;Science"&#x7D;'
                           >
-                            <span>Library Science</span>
+                            <span>पुस्तकालय विज्ञान</span>
                           </a>
                         </li>
                         <li class="main-nav-dropdown__item">
@@ -1829,7 +1828,7 @@
                             data-track-props='&#x7B;"type"&#x3A;"Subject","title"&#x3A;"Reading"&#x7D;'
                             data-track-ga='&#x7B;"category"&#x3A;"nav_click","action"&#x3A;"subject-child","label"&#x3A;"Reading"&#x7D;'
                           >
-                            <span>Reading</span>
+                            <span>अध्ययन</span>
                           </a>
                         </li>
                         <li class="main-nav-dropdown__item">
@@ -1840,7 +1839,7 @@
                             data-track-props='&#x7B;"type"&#x3A;"Subject","title"&#x3A;"Crisis&#x20;Management"&#x7D;'
                             data-track-ga='&#x7B;"category"&#x3A;"nav_click","action"&#x3A;"subject-child","label"&#x3A;"Crisis&#x20;Management"&#x7D;'
                           >
-                            <span>Crisis Management</span>
+                            <span>संकट प्रबंधन</span>
                           </a>
                         </li>
                         <li class="main-nav-dropdown__item">
@@ -1851,7 +1850,7 @@
                             data-track-props='&#x7B;"type"&#x3A;"Subject","title"&#x3A;"Humanities"&#x7D;'
                             data-track-ga='&#x7B;"category"&#x3A;"nav_click","action"&#x3A;"subject","label"&#x3A;"Humanities"&#x7D;'
                           >
-                            <span>View all Humanities</span>
+                            <span>सभी मानविकी देखें</span>
                           </a>
                         </li>
                       </ul>
@@ -1875,7 +1874,7 @@
                       </button>
 
                       <h3 class="main-nav-dropdown__subsection-title">
-                        Engineering
+                        अभियांत्रिकी
                       </h3>
                     </div>
 
@@ -1889,7 +1888,7 @@
                             data-track-props='&#x7B;"type"&#x3A;"Subject","title"&#x3A;"Electrical&#x20;Engineering"&#x7D;'
                             data-track-ga='&#x7B;"category"&#x3A;"nav_click","action"&#x3A;"subject-child","label"&#x3A;"Electrical&#x20;Engineering"&#x7D;'
                           >
-                            <span>Electrical Engineering</span>
+                            <span>विद्युत अभियन्त्रण</span>
                           </a>
                         </li>
                         <li class="main-nav-dropdown__item">
@@ -1900,7 +1899,7 @@
                             data-track-props='&#x7B;"type"&#x3A;"Subject","title"&#x3A;"Mechanical&#x20;Engineering"&#x7D;'
                             data-track-ga='&#x7B;"category"&#x3A;"nav_click","action"&#x3A;"subject-child","label"&#x3A;"Mechanical&#x20;Engineering"&#x7D;'
                           >
-                            <span>Mechanical Engineering</span>
+                            <span>मैकेनिकल इंजीनियरिंग</span>
                           </a>
                         </li>
                         <li class="main-nav-dropdown__item">
@@ -1911,7 +1910,7 @@
                             data-track-props='&#x7B;"type"&#x3A;"Subject","title"&#x3A;"Civil&#x20;Engineering"&#x7D;'
                             data-track-ga='&#x7B;"category"&#x3A;"nav_click","action"&#x3A;"subject-child","label"&#x3A;"Civil&#x20;Engineering"&#x7D;'
                           >
-                            <span>Civil Engineering</span>
+                            <span>असैनिक अभियंत्रण</span>
                           </a>
                         </li>
                         <li class="main-nav-dropdown__item">
@@ -1922,7 +1921,7 @@
                             data-track-props='&#x7B;"type"&#x3A;"Subject","title"&#x3A;"Robotics"&#x7D;'
                             data-track-ga='&#x7B;"category"&#x3A;"nav_click","action"&#x3A;"subject-child","label"&#x3A;"Robotics"&#x7D;'
                           >
-                            <span>Robotics</span>
+                            <span>रोबोटिक</span>
                           </a>
                         </li>
                         <li class="main-nav-dropdown__item">
@@ -1933,7 +1932,7 @@
                             data-track-props='&#x7B;"type"&#x3A;"Subject","title"&#x3A;"Nanotechnology"&#x7D;'
                             data-track-ga='&#x7B;"category"&#x3A;"nav_click","action"&#x3A;"subject-child","label"&#x3A;"Nanotechnology"&#x7D;'
                           >
-                            <span>Nanotechnology</span>
+                            <span>नैनो</span>
                           </a>
                         </li>
                         <li class="main-nav-dropdown__item">
@@ -1944,7 +1943,7 @@
                             data-track-props='&#x7B;"type"&#x3A;"Subject","title"&#x3A;"GIS"&#x7D;'
                             data-track-ga='&#x7B;"category"&#x3A;"nav_click","action"&#x3A;"subject-child","label"&#x3A;"GIS"&#x7D;'
                           >
-                            <span>GIS</span>
+                            <span>गिस</span>
                           </a>
                         </li>
                         <li class="main-nav-dropdown__item">
@@ -1955,7 +1954,7 @@
                             data-track-props='&#x7B;"type"&#x3A;"Subject","title"&#x3A;"Textiles"&#x7D;'
                             data-track-ga='&#x7B;"category"&#x3A;"nav_click","action"&#x3A;"subject-child","label"&#x3A;"Textiles"&#x7D;'
                           >
-                            <span>Textiles</span>
+                            <span>वस्त्र</span>
                           </a>
                         </li>
                         <li class="main-nav-dropdown__item">
@@ -1966,7 +1965,7 @@
                             data-track-props='&#x7B;"type"&#x3A;"Subject","title"&#x3A;"Manufacturing"&#x7D;'
                             data-track-ga='&#x7B;"category"&#x3A;"nav_click","action"&#x3A;"subject-child","label"&#x3A;"Manufacturing"&#x7D;'
                           >
-                            <span>Manufacturing</span>
+                            <span>उत्पादन</span>
                           </a>
                         </li>
                         <li class="main-nav-dropdown__item">
@@ -1977,7 +1976,7 @@
                             data-track-props='&#x7B;"type"&#x3A;"Subject","title"&#x3A;"BIM"&#x7D;'
                             data-track-ga='&#x7B;"category"&#x3A;"nav_click","action"&#x3A;"subject-child","label"&#x3A;"BIM"&#x7D;'
                           >
-                            <span>BIM</span>
+                            <span>बीआईएम</span>
                           </a>
                         </li>
                         <li class="main-nav-dropdown__item">
@@ -1988,7 +1987,7 @@
                             data-track-props='&#x7B;"type"&#x3A;"Subject","title"&#x3A;"CAD"&#x7D;'
                             data-track-ga='&#x7B;"category"&#x3A;"nav_click","action"&#x3A;"subject-child","label"&#x3A;"CAD"&#x7D;'
                           >
-                            <span>CAD</span>
+                            <span>पाजी</span>
                           </a>
                         </li>
                         <li class="main-nav-dropdown__item">
@@ -1999,7 +1998,7 @@
                             data-track-props='&#x7B;"type"&#x3A;"Subject","title"&#x3A;"Chemical&#x20;Engineering"&#x7D;'
                             data-track-ga='&#x7B;"category"&#x3A;"nav_click","action"&#x3A;"subject-child","label"&#x3A;"Chemical&#x20;Engineering"&#x7D;'
                           >
-                            <span>Chemical Engineering</span>
+                            <span>केमिकल इंजीनियरिंग</span>
                           </a>
                         </li>
                         <li class="main-nav-dropdown__item">
@@ -2010,7 +2009,7 @@
                             data-track-props='&#x7B;"type"&#x3A;"Subject","title"&#x3A;"Energy&#x20;Systems"&#x7D;'
                             data-track-ga='&#x7B;"category"&#x3A;"nav_click","action"&#x3A;"subject-child","label"&#x3A;"Energy&#x20;Systems"&#x7D;'
                           >
-                            <span>Energy Systems</span>
+                            <span>ऊर्जा प्रणाली</span>
                           </a>
                         </li>
                         <li class="main-nav-dropdown__item">
@@ -2021,7 +2020,7 @@
                             data-track-props='&#x7B;"type"&#x3A;"Subject","title"&#x3A;"Aerospace&#x20;Engineering"&#x7D;'
                             data-track-ga='&#x7B;"category"&#x3A;"nav_click","action"&#x3A;"subject-child","label"&#x3A;"Aerospace&#x20;Engineering"&#x7D;'
                           >
-                            <span>Aerospace Engineering</span>
+                            <span>अंतरिक्ष इंजिनीयरिंग</span>
                           </a>
                         </li>
                         <li class="main-nav-dropdown__item">
@@ -2032,7 +2031,7 @@
                             data-track-props='&#x7B;"type"&#x3A;"Subject","title"&#x3A;"Engineering"&#x7D;'
                             data-track-ga='&#x7B;"category"&#x3A;"nav_click","action"&#x3A;"subject","label"&#x3A;"Engineering"&#x7D;'
                           >
-                            <span>View all Engineering</span>
+                            <span>सभी इंजीनियरिंग देखें</span>
                           </a>
                         </li>
                       </ul>
@@ -2056,7 +2055,7 @@
                       </button>
 
                       <h3 class="main-nav-dropdown__subsection-title">
-                        Science
+                        विज्ञान
                       </h3>
                     </div>
 
@@ -2070,7 +2069,7 @@
                             data-track-props='&#x7B;"type"&#x3A;"Subject","title"&#x3A;"Chemistry"&#x7D;'
                             data-track-ga='&#x7B;"category"&#x3A;"nav_click","action"&#x3A;"subject-child","label"&#x3A;"Chemistry"&#x7D;'
                           >
-                            <span>Chemistry</span>
+                            <span>रसायन विज्ञान</span>
                           </a>
                         </li>
                         <li class="main-nav-dropdown__item">
@@ -2081,7 +2080,7 @@
                             data-track-props='&#x7B;"type"&#x3A;"Subject","title"&#x3A;"Physics"&#x7D;'
                             data-track-ga='&#x7B;"category"&#x3A;"nav_click","action"&#x3A;"subject-child","label"&#x3A;"Physics"&#x7D;'
                           >
-                            <span>Physics</span>
+                            <span>भौतिक विज्ञान</span>
                           </a>
                         </li>
                         <li class="main-nav-dropdown__item">
@@ -2092,7 +2091,7 @@
                             data-track-props='&#x7B;"type"&#x3A;"Subject","title"&#x3A;"Environmental&#x20;Science"&#x7D;'
                             data-track-ga='&#x7B;"category"&#x3A;"nav_click","action"&#x3A;"subject-child","label"&#x3A;"Environmental&#x20;Science"&#x7D;'
                           >
-                            <span>Environmental Science</span>
+                            <span>पर्यावरण विज्ञान</span>
                           </a>
                         </li>
                         <li class="main-nav-dropdown__item">
@@ -2103,7 +2102,7 @@
                             data-track-props='&#x7B;"type"&#x3A;"Subject","title"&#x3A;"Astronomy"&#x7D;'
                             data-track-ga='&#x7B;"category"&#x3A;"nav_click","action"&#x3A;"subject-child","label"&#x3A;"Astronomy"&#x7D;'
                           >
-                            <span>Astronomy</span>
+                            <span>खगोल</span>
                           </a>
                         </li>
                         <li class="main-nav-dropdown__item">
@@ -2114,7 +2113,7 @@
                             data-track-props='&#x7B;"type"&#x3A;"Subject","title"&#x3A;"Biology"&#x7D;'
                             data-track-ga='&#x7B;"category"&#x3A;"nav_click","action"&#x3A;"subject-child","label"&#x3A;"Biology"&#x7D;'
                           >
-                            <span>Biology</span>
+                            <span>जीवविज्ञान</span>
                           </a>
                         </li>
                         <li class="main-nav-dropdown__item">
@@ -2125,7 +2124,7 @@
                             data-track-props='&#x7B;"type"&#x3A;"Subject","title"&#x3A;"Agriculture"&#x7D;'
                             data-track-ga='&#x7B;"category"&#x3A;"nav_click","action"&#x3A;"subject-child","label"&#x3A;"Agriculture"&#x7D;'
                           >
-                            <span>Agriculture</span>
+                            <span>कृषि</span>
                           </a>
                         </li>
                         <li class="main-nav-dropdown__item">
@@ -2136,7 +2135,7 @@
                             data-track-props='&#x7B;"type"&#x3A;"Subject","title"&#x3A;"Materials&#x20;Science"&#x7D;'
                             data-track-ga='&#x7B;"category"&#x3A;"nav_click","action"&#x3A;"subject-child","label"&#x3A;"Materials&#x20;Science"&#x7D;'
                           >
-                            <span>Materials Science</span>
+                            <span>पदार्थ विज्ञान</span>
                           </a>
                         </li>
                         <li class="main-nav-dropdown__item">
@@ -2147,7 +2146,7 @@
                             data-track-props='&#x7B;"type"&#x3A;"Subject","title"&#x3A;"Earth&#x20;Science"&#x7D;'
                             data-track-ga='&#x7B;"category"&#x3A;"nav_click","action"&#x3A;"subject-child","label"&#x3A;"Earth&#x20;Science"&#x7D;'
                           >
-                            <span>Earth Science</span>
+                            <span>भू - विज्ञान</span>
                           </a>
                         </li>
                         <li class="main-nav-dropdown__item">
@@ -2158,7 +2157,7 @@
                             data-track-props='&#x7B;"type"&#x3A;"Subject","title"&#x3A;"Applied&#x20;Science"&#x7D;'
                             data-track-ga='&#x7B;"category"&#x3A;"nav_click","action"&#x3A;"subject-child","label"&#x3A;"Applied&#x20;Science"&#x7D;'
                           >
-                            <span>Applied Science</span>
+                            <span>व्यावहारिक विज्ञान</span>
                           </a>
                         </li>
                         <li class="main-nav-dropdown__item">
@@ -2169,7 +2168,7 @@
                             data-track-props='&#x7B;"type"&#x3A;"Subject","title"&#x3A;"Forensic&#x20;Science"&#x7D;'
                             data-track-ga='&#x7B;"category"&#x3A;"nav_click","action"&#x3A;"subject-child","label"&#x3A;"Forensic&#x20;Science"&#x7D;'
                           >
-                            <span>Forensic Science</span>
+                            <span>फोरेंसिक विज्ञान</span>
                           </a>
                         </li>
                         <li class="main-nav-dropdown__item">
@@ -2180,7 +2179,7 @@
                             data-track-props='&#x7B;"type"&#x3A;"Subject","title"&#x3A;"Science"&#x7D;'
                             data-track-ga='&#x7B;"category"&#x3A;"nav_click","action"&#x3A;"subject","label"&#x3A;"Science"&#x7D;'
                           >
-                            <span>View all Science</span>
+                            <span>सभी विज्ञान देखें</span>
                           </a>
                         </li>
                       </ul>
@@ -2204,7 +2203,7 @@
                       </button>
 
                       <h3 class="main-nav-dropdown__subsection-title">
-                        Education &amp; Teaching
+                        शिक्षा &amp; शिक्षण
                       </h3>
                     </div>
 
@@ -2218,7 +2217,7 @@
                             data-track-props='&#x7B;"type"&#x3A;"Subject","title"&#x3A;"K12"&#x7D;'
                             data-track-ga='&#x7B;"category"&#x3A;"nav_click","action"&#x3A;"subject-child","label"&#x3A;"K12"&#x7D;'
                           >
-                            <span>K12</span>
+                            <span>k12</span>
                           </a>
                         </li>
                         <li class="main-nav-dropdown__item">
@@ -2229,7 +2228,7 @@
                             data-track-props='&#x7B;"type"&#x3A;"Subject","title"&#x3A;"Higher&#x20;Education"&#x7D;'
                             data-track-ga='&#x7B;"category"&#x3A;"nav_click","action"&#x3A;"subject-child","label"&#x3A;"Higher&#x20;Education"&#x7D;'
                           >
-                            <span>Higher Education</span>
+                            <span>उच्च शिक्षा</span>
                           </a>
                         </li>
                         <li class="main-nav-dropdown__item">
@@ -2240,7 +2239,7 @@
                             data-track-props='&#x7B;"type"&#x3A;"Subject","title"&#x3A;"STEM"&#x7D;'
                             data-track-ga='&#x7B;"category"&#x3A;"nav_click","action"&#x3A;"subject-child","label"&#x3A;"STEM"&#x7D;'
                           >
-                            <span>STEM</span>
+                            <span>तना</span>
                           </a>
                         </li>
                         <li class="main-nav-dropdown__item">
@@ -2251,7 +2250,7 @@
                             data-track-props='&#x7B;"type"&#x3A;"Subject","title"&#x3A;"Teacher&#x20;Professional&#x20;Development"&#x7D;'
                             data-track-ga='&#x7B;"category"&#x3A;"nav_click","action"&#x3A;"subject-child","label"&#x3A;"Teacher&#x20;Professional&#x20;Development"&#x7D;'
                           >
-                            <span>Teacher Professional Development</span>
+                            <span>शिक्षक व्यावसायिक विकास</span>
                           </a>
                         </li>
                         <li class="main-nav-dropdown__item">
@@ -2262,7 +2261,7 @@
                             data-track-props='&#x7B;"type"&#x3A;"Subject","title"&#x3A;"Course&#x20;Development"&#x7D;'
                             data-track-ga='&#x7B;"category"&#x3A;"nav_click","action"&#x3A;"subject-child","label"&#x3A;"Course&#x20;Development"&#x7D;'
                           >
-                            <span>Course Development</span>
+                            <span>पाठ्यक्रम विकास</span>
                           </a>
                         </li>
                         <li class="main-nav-dropdown__item">
@@ -2273,7 +2272,7 @@
                             data-track-props='&#x7B;"type"&#x3A;"Subject","title"&#x3A;"Online&#x20;Education"&#x7D;'
                             data-track-ga='&#x7B;"category"&#x3A;"nav_click","action"&#x3A;"subject-child","label"&#x3A;"Online&#x20;Education"&#x7D;'
                           >
-                            <span>Online Education</span>
+                            <span>ऑनलाइन शिक्षा</span>
                           </a>
                         </li>
                         <li class="main-nav-dropdown__item">
@@ -2284,7 +2283,7 @@
                             data-track-props='&#x7B;"type"&#x3A;"Subject","title"&#x3A;"Test&#x20;Prep"&#x7D;'
                             data-track-ga='&#x7B;"category"&#x3A;"nav_click","action"&#x3A;"subject-child","label"&#x3A;"Test&#x20;Prep"&#x7D;'
                           >
-                            <span>Test Prep</span>
+                            <span>टेस्ट प्रीप</span>
                           </a>
                         </li>
                         <li class="main-nav-dropdown__item">
@@ -2295,7 +2294,7 @@
                             data-track-props='&#x7B;"type"&#x3A;"Subject","title"&#x3A;"Pedagogy"&#x7D;'
                             data-track-ga='&#x7B;"category"&#x3A;"nav_click","action"&#x3A;"subject-child","label"&#x3A;"Pedagogy"&#x7D;'
                           >
-                            <span>Pedagogy</span>
+                            <span>शिक्षा शास्त्र</span>
                           </a>
                         </li>
                         <li class="main-nav-dropdown__item">
@@ -2306,7 +2305,7 @@
                             data-track-props='&#x7B;"type"&#x3A;"Subject","title"&#x3A;"Education&#x20;&amp;&#x20;Teaching"&#x7D;'
                             data-track-ga='&#x7B;"category"&#x3A;"nav_click","action"&#x3A;"subject","label"&#x3A;"Education&#x20;&amp;&#x20;Teaching"&#x7D;'
                           >
-                            <span>View all Education &amp; Teaching</span>
+                            <span>सभी शिक्षा देखें &amp; शिक्षण</span>
                           </a>
                         </li>
                       </ul>
@@ -2330,7 +2329,7 @@
                       </button>
 
                       <h3 class="main-nav-dropdown__subsection-title">
-                        Social Sciences
+                        सामाजिक विज्ञान
                       </h3>
                     </div>
 
@@ -2344,7 +2343,7 @@
                             data-track-props='&#x7B;"type"&#x3A;"Subject","title"&#x3A;"Sociology"&#x7D;'
                             data-track-ga='&#x7B;"category"&#x3A;"nav_click","action"&#x3A;"subject-child","label"&#x3A;"Sociology"&#x7D;'
                           >
-                            <span>Sociology</span>
+                            <span>समाज शास्त्र</span>
                           </a>
                         </li>
                         <li class="main-nav-dropdown__item">
@@ -2355,7 +2354,7 @@
                             data-track-props='&#x7B;"type"&#x3A;"Subject","title"&#x3A;"Economics"&#x7D;'
                             data-track-ga='&#x7B;"category"&#x3A;"nav_click","action"&#x3A;"subject-child","label"&#x3A;"Economics"&#x7D;'
                           >
-                            <span>Economics</span>
+                            <span>अर्थशास्त्र</span>
                           </a>
                         </li>
                         <li class="main-nav-dropdown__item">
@@ -2366,7 +2365,7 @@
                             data-track-props='&#x7B;"type"&#x3A;"Subject","title"&#x3A;"Psychology"&#x7D;'
                             data-track-ga='&#x7B;"category"&#x3A;"nav_click","action"&#x3A;"subject-child","label"&#x3A;"Psychology"&#x7D;'
                           >
-                            <span>Psychology</span>
+                            <span>मनोविज्ञान</span>
                           </a>
                         </li>
                         <li class="main-nav-dropdown__item">
@@ -2377,7 +2376,7 @@
                             data-track-props='&#x7B;"type"&#x3A;"Subject","title"&#x3A;"Anthropology"&#x7D;'
                             data-track-ga='&#x7B;"category"&#x3A;"nav_click","action"&#x3A;"subject-child","label"&#x3A;"Anthropology"&#x7D;'
                           >
-                            <span>Anthropology</span>
+                            <span>मनुष्य जाति का विज्ञान</span>
                           </a>
                         </li>
                         <li class="main-nav-dropdown__item">
@@ -2388,7 +2387,7 @@
                             data-track-props='&#x7B;"type"&#x3A;"Subject","title"&#x3A;"Political&#x20;Science"&#x7D;'
                             data-track-ga='&#x7B;"category"&#x3A;"nav_click","action"&#x3A;"subject-child","label"&#x3A;"Political&#x20;Science"&#x7D;'
                           >
-                            <span>Political Science</span>
+                            <span>राजनीति विज्ञान</span>
                           </a>
                         </li>
                         <li class="main-nav-dropdown__item">
@@ -2399,7 +2398,7 @@
                             data-track-props='&#x7B;"type"&#x3A;"Subject","title"&#x3A;"Law"&#x7D;'
                             data-track-ga='&#x7B;"category"&#x3A;"nav_click","action"&#x3A;"subject-child","label"&#x3A;"Law"&#x7D;'
                           >
-                            <span>Law</span>
+                            <span>कानून</span>
                           </a>
                         </li>
                         <li class="main-nav-dropdown__item">
@@ -2410,7 +2409,7 @@
                             data-track-props='&#x7B;"type"&#x3A;"Subject","title"&#x3A;"Urban&#x20;Planning"&#x7D;'
                             data-track-ga='&#x7B;"category"&#x3A;"nav_click","action"&#x3A;"subject-child","label"&#x3A;"Urban&#x20;Planning"&#x7D;'
                           >
-                            <span>Urban Planning</span>
+                            <span>शहरी नियोजन</span>
                           </a>
                         </li>
                         <li class="main-nav-dropdown__item">
@@ -2421,7 +2420,7 @@
                             data-track-props='&#x7B;"type"&#x3A;"Subject","title"&#x3A;"Human&#x20;Rights"&#x7D;'
                             data-track-ga='&#x7B;"category"&#x3A;"nav_click","action"&#x3A;"subject-child","label"&#x3A;"Human&#x20;Rights"&#x7D;'
                           >
-                            <span>Human Rights</span>
+                            <span>मानव अधिकार</span>
                           </a>
                         </li>
                         <li class="main-nav-dropdown__item">
@@ -2432,7 +2431,7 @@
                             data-track-props='&#x7B;"type"&#x3A;"Subject","title"&#x3A;"Sustainability"&#x7D;'
                             data-track-ga='&#x7B;"category"&#x3A;"nav_click","action"&#x3A;"subject-child","label"&#x3A;"Sustainability"&#x7D;'
                           >
-                            <span>Sustainability</span>
+                            <span>वहनीयता</span>
                           </a>
                         </li>
                         <li class="main-nav-dropdown__item">
@@ -2443,7 +2442,7 @@
                             data-track-props='&#x7B;"type"&#x3A;"Subject","title"&#x3A;"Governance"&#x7D;'
                             data-track-ga='&#x7B;"category"&#x3A;"nav_click","action"&#x3A;"subject-child","label"&#x3A;"Governance"&#x7D;'
                           >
-                            <span>Governance</span>
+                            <span>शासन</span>
                           </a>
                         </li>
                         <li class="main-nav-dropdown__item">
@@ -2465,7 +2464,7 @@
                             data-track-props='&#x7B;"type"&#x3A;"Subject","title"&#x3A;"Social&#x20;Work"&#x7D;'
                             data-track-ga='&#x7B;"category"&#x3A;"nav_click","action"&#x3A;"subject-child","label"&#x3A;"Social&#x20;Work"&#x7D;'
                           >
-                            <span>Social Work</span>
+                            <span>सामाजिक कार्य</span>
                           </a>
                         </li>
                         <li class="main-nav-dropdown__item">
@@ -2476,7 +2475,7 @@
                             data-track-props='&#x7B;"type"&#x3A;"Subject","title"&#x3A;"Early&#x20;Childhood&#x20;Development"&#x7D;'
                             data-track-ga='&#x7B;"category"&#x3A;"nav_click","action"&#x3A;"subject-child","label"&#x3A;"Early&#x20;Childhood&#x20;Development"&#x7D;'
                           >
-                            <span>Early Childhood Development</span>
+                            <span>बचपन के विकास</span>
                           </a>
                         </li>
                         <li class="main-nav-dropdown__item">
@@ -2487,7 +2486,7 @@
                             data-track-props='&#x7B;"type"&#x3A;"Subject","title"&#x3A;"Social&#x20;Sciences"&#x7D;'
                             data-track-ga='&#x7B;"category"&#x3A;"nav_click","action"&#x3A;"subject","label"&#x3A;"Social&#x20;Sciences"&#x7D;'
                           >
-                            <span>View all Social Sciences</span>
+                            <span>सभी सामाजिक विज्ञान देखें</span>
                           </a>
                         </li>
                       </ul>
@@ -2511,7 +2510,7 @@
                       </button>
 
                       <h3 class="main-nav-dropdown__subsection-title">
-                        Art &amp; Design
+                        कला &amp; डिज़ाइन
                       </h3>
                     </div>
 
@@ -2525,7 +2524,7 @@
                             data-track-props='&#x7B;"type"&#x3A;"Subject","title"&#x3A;"Music"&#x7D;'
                             data-track-ga='&#x7B;"category"&#x3A;"nav_click","action"&#x3A;"subject-child","label"&#x3A;"Music"&#x7D;'
                           >
-                            <span>Music</span>
+                            <span>संगीत</span>
                           </a>
                         </li>
                         <li class="main-nav-dropdown__item">
@@ -2536,7 +2535,7 @@
                             data-track-props='&#x7B;"type"&#x3A;"Subject","title"&#x3A;"Digital&#x20;Media"&#x7D;'
                             data-track-ga='&#x7B;"category"&#x3A;"nav_click","action"&#x3A;"subject-child","label"&#x3A;"Digital&#x20;Media"&#x7D;'
                           >
-                            <span>Digital Media</span>
+                            <span>डिजीटल मीडिया</span>
                           </a>
                         </li>
                         <li class="main-nav-dropdown__item">
@@ -2547,7 +2546,7 @@
                             data-track-props='&#x7B;"type"&#x3A;"Subject","title"&#x3A;"Visual&#x20;Arts"&#x7D;'
                             data-track-ga='&#x7B;"category"&#x3A;"nav_click","action"&#x3A;"subject-child","label"&#x3A;"Visual&#x20;Arts"&#x7D;'
                           >
-                            <span>Visual Arts</span>
+                            <span>दृश्य कला</span>
                           </a>
                         </li>
                         <li class="main-nav-dropdown__item">
@@ -2558,7 +2557,7 @@
                             data-track-props='&#x7B;"type"&#x3A;"Subject","title"&#x3A;"Design&#x20;&amp;&#x20;Creativity"&#x7D;'
                             data-track-ga='&#x7B;"category"&#x3A;"nav_click","action"&#x3A;"subject-child","label"&#x3A;"Design&#x20;&amp;&#x20;Creativity"&#x7D;'
                           >
-                            <span>Design &amp; Creativity</span>
+                            <span>डिज़ाइन &amp; रचनात्मकता</span>
                           </a>
                         </li>
                         <li class="main-nav-dropdown__item">
@@ -2569,7 +2568,7 @@
                             data-track-props='&#x7B;"type"&#x3A;"Subject","title"&#x3A;"Art&#x20;&amp;&#x20;Design"&#x7D;'
                             data-track-ga='&#x7B;"category"&#x3A;"nav_click","action"&#x3A;"subject","label"&#x3A;"Art&#x20;&amp;&#x20;Design"&#x7D;'
                           >
-                            <span>View all Art &amp; Design</span>
+                            <span>सभी कला देखें &amp; डिज़ाइन</span>
                           </a>
                         </li>
                       </ul>
@@ -2593,7 +2592,7 @@
                       </button>
 
                       <h3 class="main-nav-dropdown__subsection-title">
-                        Data Science
+                        डेटा विज्ञान
                       </h3>
                     </div>
 
@@ -2607,7 +2606,7 @@
                             data-track-props='&#x7B;"type"&#x3A;"Subject","title"&#x3A;"Bioinformatics"&#x7D;'
                             data-track-ga='&#x7B;"category"&#x3A;"nav_click","action"&#x3A;"subject-child","label"&#x3A;"Bioinformatics"&#x7D;'
                           >
-                            <span>Bioinformatics</span>
+                            <span>बायोइनफॉरमैटिक्स</span>
                           </a>
                         </li>
                         <li class="main-nav-dropdown__item">
@@ -2618,7 +2617,7 @@
                             data-track-props='&#x7B;"type"&#x3A;"Subject","title"&#x3A;"Big&#x20;Data"&#x7D;'
                             data-track-ga='&#x7B;"category"&#x3A;"nav_click","action"&#x3A;"subject-child","label"&#x3A;"Big&#x20;Data"&#x7D;'
                           >
-                            <span>Big Data</span>
+                            <span>बड़ा डेटा</span>
                           </a>
                         </li>
                         <li class="main-nav-dropdown__item">
@@ -2629,7 +2628,7 @@
                             data-track-props='&#x7B;"type"&#x3A;"Subject","title"&#x3A;"Data&#x20;Mining"&#x7D;'
                             data-track-ga='&#x7B;"category"&#x3A;"nav_click","action"&#x3A;"subject-child","label"&#x3A;"Data&#x20;Mining"&#x7D;'
                           >
-                            <span>Data Mining</span>
+                            <span>डेटा खनन</span>
                           </a>
                         </li>
                         <li class="main-nav-dropdown__item">
@@ -2640,7 +2639,7 @@
                             data-track-props='&#x7B;"type"&#x3A;"Subject","title"&#x3A;"Data&#x20;Analysis"&#x7D;'
                             data-track-ga='&#x7B;"category"&#x3A;"nav_click","action"&#x3A;"subject-child","label"&#x3A;"Data&#x20;Analysis"&#x7D;'
                           >
-                            <span>Data Analysis</span>
+                            <span>डेटा विश्लेषण</span>
                           </a>
                         </li>
                         <li class="main-nav-dropdown__item">
@@ -2651,7 +2650,7 @@
                             data-track-props='&#x7B;"type"&#x3A;"Subject","title"&#x3A;"Data&#x20;Visualization"&#x7D;'
                             data-track-ga='&#x7B;"category"&#x3A;"nav_click","action"&#x3A;"subject-child","label"&#x3A;"Data&#x20;Visualization"&#x7D;'
                           >
-                            <span>Data Visualization</span>
+                            <span>डेटा विज़ुअलाइज़ेशन</span>
                           </a>
                         </li>
                         <li class="main-nav-dropdown__item">
@@ -2662,7 +2661,7 @@
                             data-track-props='&#x7B;"type"&#x3A;"Subject","title"&#x3A;"Jupyter&#x20;Notebooks"&#x7D;'
                             data-track-ga='&#x7B;"category"&#x3A;"nav_click","action"&#x3A;"subject-child","label"&#x3A;"Jupyter&#x20;Notebooks"&#x7D;'
                           >
-                            <span>Jupyter Notebooks</span>
+                            <span>ज्यूपीटर नोटबुक</span>
                           </a>
                         </li>
                         <li class="main-nav-dropdown__item">
@@ -2673,7 +2672,7 @@
                             data-track-props='&#x7B;"type"&#x3A;"Subject","title"&#x3A;"Data&#x20;Science"&#x7D;'
                             data-track-ga='&#x7B;"category"&#x3A;"nav_click","action"&#x3A;"subject","label"&#x3A;"Data&#x20;Science"&#x7D;'
                           >
-                            <span>View all Data Science</span>
+                            <span>सभी डेटा विज्ञान देखें</span>
                           </a>
                         </li>
                       </ul>
@@ -2697,7 +2696,7 @@
                       </button>
 
                       <h3 class="main-nav-dropdown__subsection-title">
-                        Programming
+                        प्रोग्रामिंग
                       </h3>
                     </div>
 
@@ -2711,7 +2710,7 @@
                             data-track-props='&#x7B;"type"&#x3A;"Subject","title"&#x3A;"Mobile&#x20;Development"&#x7D;'
                             data-track-ga='&#x7B;"category"&#x3A;"nav_click","action"&#x3A;"subject-child","label"&#x3A;"Mobile&#x20;Development"&#x7D;'
                           >
-                            <span>Mobile Development</span>
+                            <span>मोबाइल विकास</span>
                           </a>
                         </li>
                         <li class="main-nav-dropdown__item">
@@ -2722,7 +2721,7 @@
                             data-track-props='&#x7B;"type"&#x3A;"Subject","title"&#x3A;"Web&#x20;Development"&#x7D;'
                             data-track-ga='&#x7B;"category"&#x3A;"nav_click","action"&#x3A;"subject-child","label"&#x3A;"Web&#x20;Development"&#x7D;'
                           >
-                            <span>Web Development</span>
+                            <span>वेब विकास</span>
                           </a>
                         </li>
                         <li class="main-nav-dropdown__item">
@@ -2733,7 +2732,7 @@
                             data-track-props='&#x7B;"type"&#x3A;"Subject","title"&#x3A;"Databases"&#x7D;'
                             data-track-ga='&#x7B;"category"&#x3A;"nav_click","action"&#x3A;"subject-child","label"&#x3A;"Databases"&#x7D;'
                           >
-                            <span>Databases</span>
+                            <span>डेटाबेस</span>
                           </a>
                         </li>
                         <li class="main-nav-dropdown__item">
@@ -2744,7 +2743,7 @@
                             data-track-props='&#x7B;"type"&#x3A;"Subject","title"&#x3A;"Game&#x20;Development"&#x7D;'
                             data-track-ga='&#x7B;"category"&#x3A;"nav_click","action"&#x3A;"subject-child","label"&#x3A;"Game&#x20;Development"&#x7D;'
                           >
-                            <span>Game Development</span>
+                            <span>खेल का विकास</span>
                           </a>
                         </li>
                         <li class="main-nav-dropdown__item">
@@ -2755,7 +2754,7 @@
                             data-track-props='&#x7B;"type"&#x3A;"Subject","title"&#x3A;"Programming&#x20;Languages"&#x7D;'
                             data-track-ga='&#x7B;"category"&#x3A;"nav_click","action"&#x3A;"subject-child","label"&#x3A;"Programming&#x20;Languages"&#x7D;'
                           >
-                            <span>Programming Languages</span>
+                            <span>प्रोग्रामिंग भाषा</span>
                           </a>
                         </li>
                         <li class="main-nav-dropdown__item">
@@ -2766,7 +2765,7 @@
                             data-track-props='&#x7B;"type"&#x3A;"Subject","title"&#x3A;"Software&#x20;Development"&#x7D;'
                             data-track-ga='&#x7B;"category"&#x3A;"nav_click","action"&#x3A;"subject-child","label"&#x3A;"Software&#x20;Development"&#x7D;'
                           >
-                            <span>Software Development</span>
+                            <span>सॉफ्टवेयर डेवलपमेंट</span>
                           </a>
                         </li>
                         <li class="main-nav-dropdown__item">
@@ -2777,7 +2776,7 @@
                             data-track-props='&#x7B;"type"&#x3A;"Subject","title"&#x3A;"Cloud&#x20;Computing"&#x7D;'
                             data-track-ga='&#x7B;"category"&#x3A;"nav_click","action"&#x3A;"subject-child","label"&#x3A;"Cloud&#x20;Computing"&#x7D;'
                           >
-                            <span>Cloud Computing</span>
+                            <span>क्लाउड कम्प्यूटिंग</span>
                           </a>
                         </li>
                         <li class="main-nav-dropdown__item">
@@ -2788,7 +2787,7 @@
                             data-track-props='&#x7B;"type"&#x3A;"Subject","title"&#x3A;"Programming"&#x7D;'
                             data-track-ga='&#x7B;"category"&#x3A;"nav_click","action"&#x3A;"subject","label"&#x3A;"Programming"&#x7D;'
                           >
-                            <span>View all Programming</span>
+                            <span>सभी प्रोग्रामिंग देखें</span>
                           </a>
                         </li>
                       </ul>
@@ -2812,7 +2811,7 @@
                       </button>
 
                       <h3 class="main-nav-dropdown__subsection-title">
-                        Personal Development
+                        व्यक्तिगत विकास
                       </h3>
                     </div>
 
@@ -2826,7 +2825,7 @@
                             data-track-props='&#x7B;"type"&#x3A;"Subject","title"&#x3A;"Communication&#x20;Skills"&#x7D;'
                             data-track-ga='&#x7B;"category"&#x3A;"nav_click","action"&#x3A;"subject-child","label"&#x3A;"Communication&#x20;Skills"&#x7D;'
                           >
-                            <span>Communication Skills</span>
+                            <span>संचार कौशल</span>
                           </a>
                         </li>
                         <li class="main-nav-dropdown__item">
@@ -2837,7 +2836,7 @@
                             data-track-props='&#x7B;"type"&#x3A;"Subject","title"&#x3A;"Career&#x20;Development"&#x7D;'
                             data-track-ga='&#x7B;"category"&#x3A;"nav_click","action"&#x3A;"subject-child","label"&#x3A;"Career&#x20;Development"&#x7D;'
                           >
-                            <span>Career Development</span>
+                            <span>कैरियर विकास</span>
                           </a>
                         </li>
                         <li class="main-nav-dropdown__item">
@@ -2848,7 +2847,7 @@
                             data-track-props='&#x7B;"type"&#x3A;"Subject","title"&#x3A;"Self&#x20;Improvement"&#x7D;'
                             data-track-ga='&#x7B;"category"&#x3A;"nav_click","action"&#x3A;"subject-child","label"&#x3A;"Self&#x20;Improvement"&#x7D;'
                           >
-                            <span>Self Improvement</span>
+                            <span>आत्म सुधार</span>
                           </a>
                         </li>
                         <li class="main-nav-dropdown__item">
@@ -2859,7 +2858,7 @@
                             data-track-props='&#x7B;"type"&#x3A;"Subject","title"&#x3A;"Presentation&#x20;Skills"&#x7D;'
                             data-track-ga='&#x7B;"category"&#x3A;"nav_click","action"&#x3A;"subject-child","label"&#x3A;"Presentation&#x20;Skills"&#x7D;'
                           >
-                            <span>Presentation Skills</span>
+                            <span>कौशल प्रस्तुति</span>
                           </a>
                         </li>
                         <li class="main-nav-dropdown__item">
@@ -2870,7 +2869,7 @@
                             data-track-props='&#x7B;"type"&#x3A;"Subject","title"&#x3A;"Resilience"&#x7D;'
                             data-track-ga='&#x7B;"category"&#x3A;"nav_click","action"&#x3A;"subject-child","label"&#x3A;"Resilience"&#x7D;'
                           >
-                            <span>Resilience</span>
+                            <span>लचीलापन</span>
                           </a>
                         </li>
                         <li class="main-nav-dropdown__item">
@@ -2881,7 +2880,7 @@
                             data-track-props='&#x7B;"type"&#x3A;"Subject","title"&#x3A;"Personal&#x20;Development"&#x7D;'
                             data-track-ga='&#x7B;"category"&#x3A;"nav_click","action"&#x3A;"subject","label"&#x3A;"Personal&#x20;Development"&#x7D;'
                           >
-                            <span>View all Personal Development</span>
+                            <span>सभी व्यक्तिगत विकास देखें</span>
                           </a>
                         </li>
                       </ul>
@@ -2905,7 +2904,7 @@
                       </button>
 
                       <h3 class="main-nav-dropdown__subsection-title">
-                        Information Security (InfoSec)
+                        सूचना सुरक्षा
                       </h3>
                     </div>
 
@@ -2919,7 +2918,7 @@
                             data-track-props='&#x7B;"type"&#x3A;"Subject","title"&#x3A;"Cybersecurity"&#x7D;'
                             data-track-ga='&#x7B;"category"&#x3A;"nav_click","action"&#x3A;"subject-child","label"&#x3A;"Cybersecurity"&#x7D;'
                           >
-                            <span>Cybersecurity</span>
+                            <span>साइबर सुरक्षा</span>
                           </a>
                         </li>
                         <li class="main-nav-dropdown__item">
@@ -2930,7 +2929,7 @@
                             data-track-props='&#x7B;"type"&#x3A;"Subject","title"&#x3A;"Network&#x20;Security"&#x7D;'
                             data-track-ga='&#x7B;"category"&#x3A;"nav_click","action"&#x3A;"subject-child","label"&#x3A;"Network&#x20;Security"&#x7D;'
                           >
-                            <span>Network Security</span>
+                            <span>नेटवर्क सुरक्षा</span>
                           </a>
                         </li>
                         <li class="main-nav-dropdown__item">
@@ -2941,7 +2940,7 @@
                             data-track-props='&#x7B;"type"&#x3A;"Subject","title"&#x3A;"Ethical&#x20;Hacking"&#x7D;'
                             data-track-ga='&#x7B;"category"&#x3A;"nav_click","action"&#x3A;"subject-child","label"&#x3A;"Ethical&#x20;Hacking"&#x7D;'
                           >
-                            <span>Ethical Hacking</span>
+                            <span>नैतिक हैकिंग</span>
                           </a>
                         </li>
                         <li class="main-nav-dropdown__item">
@@ -2952,7 +2951,7 @@
                             data-track-props='&#x7B;"type"&#x3A;"Subject","title"&#x3A;"Digital&#x20;Forensics"&#x7D;'
                             data-track-ga='&#x7B;"category"&#x3A;"nav_click","action"&#x3A;"subject-child","label"&#x3A;"Digital&#x20;Forensics"&#x7D;'
                           >
-                            <span>Digital Forensics</span>
+                            <span>अंकीय फोरेंसिक</span>
                           </a>
                         </li>
                         <li class="main-nav-dropdown__item">
@@ -2963,7 +2962,7 @@
                             data-track-props='&#x7B;"type"&#x3A;"Subject","title"&#x3A;"Reverse&#x20;Engineering"&#x7D;'
                             data-track-ga='&#x7B;"category"&#x3A;"nav_click","action"&#x3A;"subject-child","label"&#x3A;"Reverse&#x20;Engineering"&#x7D;'
                           >
-                            <span>Reverse Engineering</span>
+                            <span>रिवर्स इंजीनियरिंग</span>
                           </a>
                         </li>
                         <li class="main-nav-dropdown__item">
@@ -2974,7 +2973,7 @@
                             data-track-props='&#x7B;"type"&#x3A;"Subject","title"&#x3A;"Penetration&#x20;Testing"&#x7D;'
                             data-track-ga='&#x7B;"category"&#x3A;"nav_click","action"&#x3A;"subject-child","label"&#x3A;"Penetration&#x20;Testing"&#x7D;'
                           >
-                            <span>Penetration Testing</span>
+                            <span>भेदन परीक्षण</span>
                           </a>
                         </li>
                         <li class="main-nav-dropdown__item">
@@ -2985,7 +2984,7 @@
                             data-track-props='&#x7B;"type"&#x3A;"Subject","title"&#x3A;"Malware&#x20;Analysis"&#x7D;'
                             data-track-ga='&#x7B;"category"&#x3A;"nav_click","action"&#x3A;"subject-child","label"&#x3A;"Malware&#x20;Analysis"&#x7D;'
                           >
-                            <span>Malware Analysis</span>
+                            <span>मालवेयर विश्लेषण</span>
                           </a>
                         </li>
                         <li class="main-nav-dropdown__item">
@@ -2996,7 +2995,7 @@
                             data-track-props='&#x7B;"type"&#x3A;"Subject","title"&#x3A;"DevSecOps"&#x7D;'
                             data-track-ga='&#x7B;"category"&#x3A;"nav_click","action"&#x3A;"subject-child","label"&#x3A;"DevSecOps"&#x7D;'
                           >
-                            <span>DevSecOps</span>
+                            <span>देवता</span>
                           </a>
                         </li>
                         <li class="main-nav-dropdown__item">
@@ -3007,7 +3006,7 @@
                             data-track-props='&#x7B;"type"&#x3A;"Subject","title"&#x3A;"OSINT&#x20;&#x28;Open&#x20;Source&#x20;Intelligence&#x29;"&#x7D;'
                             data-track-ga='&#x7B;"category"&#x3A;"nav_click","action"&#x3A;"subject-child","label"&#x3A;"OSINT&#x20;&#x28;Open&#x20;Source&#x20;Intelligence&#x29;"&#x7D;'
                           >
-                            <span>OSINT (Open Source Intelligence)</span>
+                            <span>ओसिंट (ओपन सोर्स इंटेलिजेंस)</span>
                           </a>
                         </li>
                         <li class="main-nav-dropdown__item">
@@ -3018,7 +3017,7 @@
                             data-track-props='&#x7B;"type"&#x3A;"Subject","title"&#x3A;"Threat&#x20;Intelligence"&#x7D;'
                             data-track-ga='&#x7B;"category"&#x3A;"nav_click","action"&#x3A;"subject-child","label"&#x3A;"Threat&#x20;Intelligence"&#x7D;'
                           >
-                            <span>Threat Intelligence</span>
+                            <span>धमकी बुद्धि</span>
                           </a>
                         </li>
                         <li class="main-nav-dropdown__item">
@@ -3029,7 +3028,7 @@
                             data-track-props='&#x7B;"type"&#x3A;"Subject","title"&#x3A;"Information&#x20;Security&#x20;Certifications"&#x7D;'
                             data-track-ga='&#x7B;"category"&#x3A;"nav_click","action"&#x3A;"subject-child","label"&#x3A;"Information&#x20;Security&#x20;Certifications"&#x7D;'
                           >
-                            <span>Information Security Certifications</span>
+                            <span>सूचना सुरक्षा प्रमाणपत्र</span>
                           </a>
                         </li>
                         <li class="main-nav-dropdown__item">
@@ -3040,7 +3039,7 @@
                             data-track-props='&#x7B;"type"&#x3A;"Subject","title"&#x3A;"Red&#x20;Team"&#x7D;'
                             data-track-ga='&#x7B;"category"&#x3A;"nav_click","action"&#x3A;"subject-child","label"&#x3A;"Red&#x20;Team"&#x7D;'
                           >
-                            <span>Red Team</span>
+                            <span>रेड टीम</span>
                           </a>
                         </li>
                         <li class="main-nav-dropdown__item">
@@ -3051,7 +3050,7 @@
                             data-track-props='&#x7B;"type"&#x3A;"Subject","title"&#x3A;"Blue&#x20;Team"&#x7D;'
                             data-track-ga='&#x7B;"category"&#x3A;"nav_click","action"&#x3A;"subject-child","label"&#x3A;"Blue&#x20;Team"&#x7D;'
                           >
-                            <span>Blue Team</span>
+                            <span>नीली टीम</span>
                           </a>
                         </li>
                         <li class="main-nav-dropdown__item">
@@ -3062,7 +3061,7 @@
                             data-track-props='&#x7B;"type"&#x3A;"Subject","title"&#x3A;"Information&#x20;Security&#x20;&#x28;InfoSec&#x29;"&#x7D;'
                             data-track-ga='&#x7B;"category"&#x3A;"nav_click","action"&#x3A;"subject","label"&#x3A;"Information&#x20;Security&#x20;&#x28;InfoSec&#x29;"&#x7D;'
                           >
-                            <span>View all Information Security (InfoSec)</span>
+                            <span>सभी सूचना सुरक्षा देखें (InfoSec)</span>
                           </a>
                         </li>
                       </ul>
@@ -3086,7 +3085,7 @@
                 data-track-ga='{"category": "nav_click", "action": "news", "label":"top"}'
                 class="relative inline-block symbol-report"
               >
-                The Report
+                रिपोर्ट
               </a>
               <div
                 class="animate-fade-hidden bg-white z-top absolute width-1-3 border-all border-gray-light shadow-light padding-medium"
@@ -3116,22 +3115,22 @@
                         href="report/2022-year-in-review/index.html"
                         class="color-charcoal"
                       >
-                        2022 Year in Review: The “New Normal” that Wasn’t
+                        समीक्षा में 2022 वर्ष: "नया सामान्य" जो नहीं था
                       </a>
                     </h4>
                     <p class="text-2 line-tight margin-bottom-xsmall">
-                      The pandemic ushered in a “new normal” in online learning,
-                      but it culminated in layoffs and stock drops.
+                      महामारी ने ऑनलाइन सीखने में एक "नए सामान्य" की शुरुआत की,
+                      लेकिन इसका समापन छंटनी और स्टॉक ड्रॉप में हुआ।
                     </p>
                     <div class="row text-2">
                       <a
                         href="report/author/dhawal/index.html"
                         class="color-charcoal weight-semi margin-right-small"
                       >
-                        Dhawal Shah
+                        सेल शाह
                       </a>
                       <time class="color-gray" datetime="2023-01-02T03:52:08"
-                        >Jan 02, 2023</time
+                        >जनवरी 02, 2023</time
                       >
                     </div>
                   </div>
@@ -3140,7 +3139,7 @@
                     <h5
                       class="text-2 border-bottom padding-bottom-xsmall weight-semi upper"
                     >
-                      Latest
+                      नवीनतम
                     </h5>
                     <ol class="list-no-style">
                       <li class="text-2 border-bottom border-gray-light">
@@ -3151,7 +3150,7 @@
               ]'
                           class="color-charcoal padding-vert-small block"
                           href="report/best-elm-courses/index.html"
-                          >7 Best Elm Courses to Take in 2023</a
+                          >2023 में लेने के लिए 7 सर्वश्रेष्ठ ईएलएम पाठ्यक्रम</a
                         >
                       </li>
                       <li class="text-2 border-bottom border-gray-light">
@@ -3162,8 +3161,8 @@
               ]'
                           class="color-charcoal padding-vert-small block"
                           href="report/coursera-google-new-deal/index.html"
-                          >Coursera’s New Deal with Google Could Cost the
-                          Company Millions</a
+                          >Google के साथ Coursera का नया सौदा खर्च कर सकता है
+                          लाखों कंपनी</a
                         >
                       </li>
                       <li class="text-2 border-bottom border-gray-light">
@@ -3174,7 +3173,7 @@
               ]'
                           class="color-charcoal padding-vert-small block"
                           href="report/review-science-of-well-being/index.html"
-                          >Rethinking Happiness to Increase Our Well-Being</a
+                          >हमारी भलाई बढ़ाने के लिए खुशी पर पुनर्विचार</a
                         >
                       </li>
                       <li class="text-2 border-bottom border-gray-light">
@@ -3185,7 +3184,8 @@
               ]'
                           class="color-charcoal padding-vert-small block"
                           href="report/best-resume-writing-courses/index.html"
-                          >10 Best Resume Writing Courses to Take in 2023</a
+                          >2023 में लेने के लिए 10 सर्वश्रेष्ठ फिर से शुरू होने
+                          वाले पाठ्यक्रम</a
                         >
                       </li>
                       <li class="text-2">
@@ -3196,7 +3196,8 @@
               ]'
                           class="color-charcoal padding-vert-small block"
                           href="report/best-ocaml-courses/index.html"
-                          >7 Best Free OCaml Courses to Take in 2023</a
+                          >2023 में लेने के लिए 7 सर्वश्रेष्ठ मुफ्त OCAML
+                          पाठ्यक्रम</a
                         >
                       </li>
                     </ol>
@@ -3214,11 +3215,11 @@
                     class="btn-white btn-medium horz-align-right relative"
                     href="report/index.html"
                   >
-                    Visit
+                    मिलने जाना
                     <i
                       style="width: 80px; top: 1px"
                       class="relative inline-block symbol-report"
-                      >The Report</i
+                      >रिपोर्ट</i
                     >
                   </a>
                 </div>
@@ -3264,15 +3265,15 @@
                     />
                     <div>
                       <p class="text-2 padding-top-small padding-horz-small">
-                        Organize and share your learning with Class Central
-                        Lists.
+                        क्लास सेंट्रल के साथ अपने सीखने को व्यवस्थित और साझा
+                        करें सूचियाँ।
                       </p>
                       <p class="text-2">
-                        View our
+                        हमारा देखें
                         <a
                           data-track-ga='&#x7B;"category"&#x3A;"nav_click","action"&#x3A;"lists","label"&#x3A;"showcase"&#x7D;'
                           href="lists.html"
-                          >Lists Showcase</a
+                          >सूची शोकेस</a
                         >
                       </p>
 
@@ -3283,7 +3284,7 @@
                         data-track-ga='{ "category": "nav_click", "action": "lists", "label": "sign up"}'
                         class="text-right btn-blue margin-top-small"
                       >
-                        Sign up
+                        साइन अप करें
                       </a>
                     </div>
                   </div>
@@ -3297,10 +3298,10 @@
                   data-track-ga='{"category": "nav_click", "action": "user", "label":"login"}'
                   href="login.html"
                   class="text-1 weight-semi color-charcoal"
-                  >Log in</a
+                  >लॉग इन करें</a
                 >
                 <span class="inline-block padding-horz-xxsmall color-charcoal"
-                  >or</span
+                  >या</span
                 >
                 <a
                   data-name="SIGNUP_LINK"
@@ -3311,7 +3312,7 @@
                   href="signup.html"
                   class="text-1 weight-semi color-charcoal"
                 >
-                  Sign up
+                  साइन अप करें
                 </a>
               </div>
               <div
@@ -3350,7 +3351,7 @@
                         href="login.html"
                         class="block text-2 hover-no-underline hover-bg-gray-light color-charcoal padding-horz-small padding-vert-xxsmall"
                       >
-                        Log in
+                        लॉग इन करें
                       </a>
                     </li>
                     <li>
@@ -3363,7 +3364,7 @@
                         href="signup.html"
                         class="block text-2 hover-no-underline hover-bg-gray-light color-charcoal padding-horz-small padding-vert-xxsmall"
                       >
-                        Sign up
+                        साइन अप करें
                       </a>
                     </li>
                   </ol>
@@ -3422,7 +3423,7 @@
                     type="search"
                     autocomplete="off"
                     aria-label="Search courses and more…"
-                    placeholder="Search 100,000 courses…"
+                    placeholder="100,000 पाठ्यक्रम खोजें ..."
                     name="q"
                     data-track-ga='&#x7B;"category"&#x3A;"autocomplete","action"&#x3A;"open&#x20;searchbox","label"&#x3A;"homepage"&#x7D;'
                     value=""
@@ -3466,7 +3467,7 @@
                           type="search"
                           autocomplete="off"
                           aria-label="Search courses and more…"
-                          placeholder="Search courses and more…"
+                          placeholder="खोज पाठ्यक्रम और अधिक…"
                           name="q"
                           data-track-ga='&#x7B;"category"&#x3A;"autocomplete","action"&#x3A;"open&#x20;searchbox","label"&#x3A;"navbar"&#x7D;'
                           value=""
@@ -3506,13 +3507,13 @@
                                 style="--offset-right: 91px"
                               >
                                 <p class="search-results__result-name--bold">
-                                  700+ Free Google Certifications
+                                  700+ नि: शुल्क Google प्रमाणपत्र
                                 </p>
                                 <span class="search-results__result-tag"
                                   ><i
                                     class="icon-xsmall icon-megaphone-charcoal"
                                   ></i>
-                                  Trending</span
+                                  रुझान</span
                                 >
                               </div>
                             </a>
@@ -3524,7 +3525,7 @@
                         data-template="suggested_search_tokens"
                       >
                         <h2 class="search-results__group-heading">
-                          Most common
+                          अत्यन्त साधारण
                         </h2>
 
                         <ol class="list-no-style">
@@ -3541,7 +3542,7 @@
                               ></i>
                               <div class="search-results__result-info">
                                 <span class="search-results__result-name"
-                                  >English</span
+                                  >अंग्रेज़ी</span
                                 >
                               </div>
                             </button>
@@ -3559,7 +3560,7 @@
                               ></i>
                               <div class="search-results__result-info">
                                 <span class="search-results__result-name"
-                                  >java</span
+                                  >जावा</span
                                 >
                               </div>
                             </button>
@@ -3577,7 +3578,7 @@
                               ></i>
                               <div class="search-results__result-info">
                                 <span class="search-results__result-name"
-                                  >sql</span
+                                  >एसक्यूएल</span
                                 >
                               </div>
                             </button>
@@ -3588,7 +3589,7 @@
                         class="search-results__group js-search-result-popular_subjects"
                       >
                         <h2 class="search-results__group-heading">
-                          Popular subjects
+                          लोकप्रिय विषय
                         </h2>
 
                         <ol class="list-no-style">
@@ -3603,10 +3604,10 @@
                               ></i>
                               <div class="search-results__result-info">
                                 <p class="search-results__result-name">
-                                  Digital Marketing
+                                  डिजिटल विपणन
                                 </p>
                                 <span class="search-results__result-extra"
-                                  >3,940 courses</span
+                                  >3,940 पाठ्यक्रम</span
                                 >
                               </div>
                             </a>
@@ -3622,10 +3623,10 @@
                               ></i>
                               <div class="search-results__result-info">
                                 <p class="search-results__result-name">
-                                  Business
+                                  व्यवसाय
                                 </p>
                                 <span class="search-results__result-extra"
-                                  >19,586 courses</span
+                                  >19,586 पाठ्यक्रम</span
                                 >
                               </div>
                             </a>
@@ -3641,10 +3642,10 @@
                               ></i>
                               <div class="search-results__result-info">
                                 <p class="search-results__result-name">
-                                  Information Technology (IT) Certifications
+                                  सूचना प्रौद्योगिकी (आईटी) प्रमाणपत्र
                                 </p>
                                 <span class="search-results__result-extra"
-                                  >505 courses</span
+                                  >505 पाठ्यक्रम</span
                                 >
                               </div>
                             </a>
@@ -3655,7 +3656,7 @@
                         class="search-results__group js-search-result-popular_courses"
                       >
                         <h2 class="search-results__group-heading">
-                          Popular courses
+                          लोकप्रिय पाठ्यक्रम
                         </h2>
 
                         <ol class="list-no-style">
@@ -3670,11 +3671,10 @@
                               ></i>
                               <div class="search-results__result-info">
                                 <p class="search-results__result-name">
-                                  Supporting Successful Learning in Primary
-                                  School
+                                  प्राथमिक में सफल सीखने का समर्थन करना विद्यालय
                                 </p>
                                 <span class="search-results__result-extra"
-                                  >University of Reading</span
+                                  >यूनिवर्सिटी ऑफ रीडिंग</span
                                 >
                               </div>
                             </a>
@@ -3690,11 +3690,10 @@
                               ></i>
                               <div class="search-results__result-info">
                                 <p class="search-results__result-name">
-                                  Understanding Clinical Research: Behind the
-                                  Statistics
+                                  नैदानिक अनुसंधान को समझना: पीछे आंकड़े
                                 </p>
                                 <span class="search-results__result-extra"
-                                  >University of Cape Town</span
+                                  >यूनिवर्सिटी ऑफ केप टाउन</span
                                 >
                               </div>
                             </a>
@@ -3710,13 +3709,13 @@
                               ></i>
                               <div class="search-results__result-info">
                                 <p class="search-results__result-name">
-                                  Introduction to Indoor Air Quality
+                                  इनडोर वायु गुणवत्ता का परिचय
                                 </p>
                                 <span class="search-results__result-extra"
-                                  >The Hong Kong University of Science and
-                                  Technology</span
-                                >
-                              </div>
+                                  >हांगकांग विश्वविद्यालय विज्ञान और
+                                  तकनीकी</span
+                                >हांगकांग विश्वविद्यालय विज्ञान और
+                                  तकनीकी
                             </a>
                           </li>
                         </ol>
@@ -3733,24 +3732,24 @@
               <p
                 class="row vert-align-top horz-align-left text-2 medium-up-text-1 margin-top-xsmall padding-horz-xxsmall"
               >
-                Or browse by&nbsp;
-                <a class="link-gray-underline" href="subjects.html">subject</a>
-                &nbsp;or&nbsp;<a
+                या द्वारा ब्राउज़ करें&nbsp;
+                <a class="link-gray-underline" href="subjects.html">विषय</a>
+                &nbsp;या&nbsp;<a
                   class="link-gray-underline"
                   href="universities.html"
-                  >university</a
+                  >विश्वविद्यालय</a
                 >
                 <a
                   class="horz-align-right text-1 icon-help-charcoal icon-right-small link-gray-underline"
                   href="help/moocs.html"
                 >
-                  <span class="small-down-hidden">Learn more</span>
+                  <span class="small-down-hidden">और अधिक जानें</span>
                 </a>
               </p>
             </div>
 
             <h3 class="text-1 weight-bold margin-bottom-xsmall">
-              Popular courses
+              लोकप्रिय पाठ्यक्रम
             </h3>
             <ul id="home-subjects" class="list-not-style">
               <li
@@ -3771,7 +3770,7 @@
                   src=https://ccweb.imgix.net/https%3A%2F%2Fwww.classcentral.com%2Fimages%2Ficon-free-certificates.png?auto=format&amp;h=50&amp;ixlib=php-3.3.1&amp;s=5eaf2bfa5357e8a666c9708da88c95c8
                   width="25" height="25" alt="" ><span
                     class="padding-right-xxsmall"
-                    >Free Certificates</span
+                    >नि: शुल्क प्रमाण पत्र</span
                   ></a
                 >
               </li>
@@ -3793,7 +3792,7 @@
                   src=https://ccweb.imgix.net/https%3A%2F%2Fwww.classcentral.com%2Fimages%2Ficon-ivy-league.png?auto=format&amp;h=50&amp;ixlib=php-3.3.1&amp;s=494e82d5da0aa527d6a627ec69bfbb39
                   width="25" height="25" alt="" ><span
                     class="padding-right-xxsmall"
-                    >Ivy League</span
+                    >आइवी लीग</span
                   ></a
                 >
               </li>
@@ -3815,7 +3814,7 @@
                   src=https://ccweb.imgix.net/https%3A%2F%2Fwww.classcentral.com%2Fimages%2Flogos%2Finstitutions%2Fstanford-trn-sq.png?auto=format&amp;h=50&amp;ixlib=php-3.3.1&amp;s=f7a38d0e8610e9db640b8c41881489fc
                   width="25" height="25" alt="" ><span
                     class="padding-right-xxsmall"
-                    >Stanford</span
+                    >स्टैनफोर्ड</span
                   ></a
                 >
               </li>
@@ -3837,7 +3836,7 @@
                   src=https://ccweb.imgix.net/https%3A%2F%2Fwww.classcentral.com%2Fimages%2Ficon-best-all-time.png?auto=format&amp;h=50&amp;ixlib=php-3.3.1&amp;s=57729919423ae4e0cc20fea3df56747d
                   width="25" height="25" alt="" ><span
                     class="padding-right-xxsmall"
-                    >Best of All Time</span
+                    >सभी समय का सबसे अच्छा</span
                   ></a
                 >
               </li>
@@ -3859,7 +3858,7 @@
                   src=https://ccweb.imgix.net/https%3A%2F%2Fwww.classcentral.com%2Fimages%2Ficon-cs.png?auto=format&amp;h=50&amp;ixlib=php-3.3.1&amp;s=353c0b4c8dc148c83069620078ca0ebe
                   width="25" height="25" alt="" ><span
                     class="padding-right-xxsmall"
-                    >Computer Science</span
+                    >कंप्यूटर विज्ञान</span
                   ></a
                 >
               </li>
@@ -3881,7 +3880,7 @@
                   src=https://ccweb.imgix.net/https%3A%2F%2Fwww.classcentral.com%2Fimages%2Ficon-sustainability.png?auto=format&amp;h=50&amp;ixlib=php-3.3.1&amp;s=d154c083ace7d9bd4779c95563bda007
                   width="25" height="25" alt="" ><span
                     class="padding-right-xxsmall"
-                    >Sustainability</span
+                    >वहनीयता</span
                   ></a
                 >
               </li>
@@ -3903,7 +3902,7 @@
                   src=https://ccweb.imgix.net/https%3A%2F%2Fwww.classcentral.com%2Fimages%2Flogos%2Finstitutions%2Fmit-trn-sq.png?auto=format&amp;h=50&amp;ixlib=php-3.3.1&amp;s=23432d71793524105bee93b332ab7424
                   width="25" height="25" alt="" ><span
                     class="padding-right-xxsmall"
-                    >MIT</span
+                    >साथ</span
                   ></a
                 >
               </li>
@@ -3925,7 +3924,7 @@
                   src=https://ccweb.imgix.net/https%3A%2F%2Fwww.classcentral.com%2Fimages%2Flogos%2Finstitutions%2Fgoogle-trn-sq.png?auto=format&amp;h=50&amp;ixlib=php-3.3.1&amp;s=43d21ab54c9c89dac23dd72c80bc887b
                   width="25" height="25" alt="" ><span
                     class="padding-right-xxsmall"
-                    >Google</span
+                    >गूगल</span
                   ></a
                 >
               </li>
@@ -3947,7 +3946,7 @@
                   src=https://ccweb.imgix.net/https%3A%2F%2Fwww.classcentral.com%2Fimages%2Flogos%2Finstitutions%2Famazon-trn-sq.png?auto=format&amp;h=50&amp;ixlib=php-3.3.1&amp;s=74217eb4aea11f57834caf58c19ba539
                   width="25" height="25" alt="" ><span
                     class="padding-right-xxsmall"
-                    >Amazon</span
+                    >वीरांगना</span
                   ></a
                 >
               </li>
@@ -3969,7 +3968,7 @@
                   src=https://ccweb.imgix.net/https%3A%2F%2Fwww.classcentral.com%2Fimages%2Ficon-business.png?auto=format&amp;h=50&amp;ixlib=php-3.3.1&amp;s=b98c8d8725c5d944054f9637460927f1
                   width="25" height="25" alt="" ><span
                     class="padding-right-xxsmall"
-                    >Business</span
+                    >व्यवसाय</span
                   ></a
                 >
               </li>
@@ -3991,7 +3990,7 @@
                     class="icon-lettermark-charcoal icon-large margin-right-xxsmall"
                   ></span
                   ><span class="padding-right-xxsmall"
-                    >Best Courses Guides</span
+                    >सर्वश्रेष्ठ पाठ्यक्रम गाइड</span
                   ></a
                 >
               </li>
@@ -4013,7 +4012,7 @@
                   src=https://ccweb.imgix.net/https%3A%2F%2Fwww.classcentral.com%2Fimages%2Fpromobar%2Fdeal.svg?auto=format&amp;h=50&amp;ixlib=php-3.3.1&amp;s=9c3031e6bc3996defc5c59def7d6290c
                   width="25" height="25" alt="" ><span
                     class="padding-right-xxsmall"
-                    >Deals and Discounts</span
+                    >सौदे और छूट</span
                   ></a
                 >
               </li>
@@ -4033,7 +4032,7 @@
                 class="head-2 medium-up-head-1 margin-bottom-xsmall"
                 style="color: #2b0380"
               >
-                Find the best courses, wherever they exist
+               जहां भी वे मौजूद हैं, सबसे अच्छे पाठ्यक्रम खोजें
               </h2>
             </header>
 
@@ -4048,7 +4047,7 @@
                 <h3
                   class="head-2 text-center large-up-text-left margin-bottom-large"
                 >
-                  1200+ Universities
+                  1200+ विश्वविद्यालय
                 </h3>
                 <ul class="width-100 row list-no-style margin-bottom-xlarge">
                   <li class="width-100 large-up-width-1-2">
@@ -4062,7 +4061,7 @@
                         alt="Harvard University Logo"
                       />
                       <strong class="margin-left-xsmall fill-space"
-                        >Harvard University</strong
+                        >विदेश महाविद्यालय</strong
                       >
                     </a>
                   </li>
@@ -4077,7 +4076,7 @@
                         alt="Stanford University Logo"
                       />
                       <strong class="margin-left-xsmall fill-space"
-                        >Stanford University</strong
+                        >स्टैनफोर्ड विश्वविद्यालय</strong
                       >
                     </a>
                   </li>
@@ -4092,7 +4091,7 @@
                         alt="IIT Kharagpur Logo"
                       />
                       <strong class="margin-left-xsmall fill-space"
-                        >IIT Kharagpur</strong
+                        >आईआईटी खड़गपुर</strong
                       >
                     </a>
                   </li>
@@ -4106,7 +4105,7 @@
                         src="../ccweb.imgix.net/https_/www.classcentral.com/images/logos/homepage/mit6803.png?auto=format&amp;cs=strip&amp;fit=&amp;h=50&amp;ixlib=php-3.3.1&amp;w=50&amp;s=5e57f727cf0057460f8bee7213cd3539"
                         alt="MIT Logo"
                       />
-                      <strong class="margin-left-xsmall fill-space">MIT</strong>
+                      <strong class="margin-left-xsmall fill-space">साथ</strong>
                     </a>
                   </li>
                   <li class="width-100 large-up-width-1-2">
@@ -4120,7 +4119,7 @@
                         alt="Rice University Logo"
                       />
                       <strong class="margin-left-xsmall fill-space"
-                        >Rice University</strong
+                        >राइस यूनिवर्सिटी</strong
                       >
                     </a>
                   </li>
@@ -4135,7 +4134,7 @@
                         alt="IIT Madras Logo"
                       />
                       <strong class="margin-left-xsmall fill-space"
-                        >IIT Madras</strong
+                        >आईआईटी मद्रास</strong
                       >
                     </a>
                   </li>
@@ -4150,7 +4149,7 @@
                         alt="Columbia University Logo"
                       />
                       <strong class="margin-left-xsmall fill-space"
-                        >Columbia University</strong
+                        >कोलम्बिया विश्वविद्यालय</strong
                       >
                     </a>
                   </li>
@@ -4165,7 +4164,7 @@
                         alt="Cornell University Logo"
                       />
                       <strong class="margin-left-xsmall fill-space"
-                        >Cornell University</strong
+                        >कॉर्नेल विश्वविद्यालय</strong
                       >
                     </a>
                   </li>
@@ -4180,7 +4179,7 @@
                         alt="U. of Edinburgh Logo"
                       />
                       <strong class="margin-left-xsmall fill-space"
-                        >U. of Edinburgh</strong
+                        >एडिनबर्ग के यू।</strong
                       >
                     </a>
                   </li>
@@ -4195,7 +4194,7 @@
                         alt="Purdue University Logo"
                       />
                       <strong class="margin-left-xsmall fill-space"
-                        >Purdue University</strong
+                        >पर्ड्यू विश्वविद्यालय</strong
                       >
                     </a>
                   </li>
@@ -4210,7 +4209,7 @@
                         alt="U. of Pennsylvania Logo"
                       />
                       <strong class="margin-left-xsmall fill-space"
-                        >U. of Pennsylvania</strong
+                        >पेंसिल्वेनिया के यू</strong
                       >
                     </a>
                   </li>
@@ -4225,7 +4224,7 @@
                         alt="Duke University Logo"
                       />
                       <strong class="margin-left-xsmall fill-space"
-                        >Duke University</strong
+                        >ड्यूक विश्वविद्यालय</strong
                       >
                     </a>
                   </li>
@@ -4240,7 +4239,7 @@
                         alt="U. of Michigan Logo"
                       />
                       <strong class="margin-left-xsmall fill-space"
-                        >U. of Michigan</strong
+                        >मिशिगन के यू</strong
                       >
                     </a>
                   </li>
@@ -4253,7 +4252,7 @@
                     <span
                       class="text-1 weight-semi icon-chevron-right-charcoal icon-right-small color-charcoal"
                     >
-                      Browse universities
+                      ब्राउज़ विश्वविद्यालयों
                     </span>
                   </a>
                 </div>
@@ -4262,7 +4261,7 @@
                 class="medium-down-hidden decor-grid-line border-box width-100 large-up-width-2-7 padding-horz-small large-up-padding-horz-large relative"
               >
                 <h3 class="head-2 text-left margin-bottom-large">
-                  80 Providers
+                  80 प्रदाता
                 </h3>
                 <ul class="width-100 row list-no-style margin-bottom-xlarge">
                   <li class="width-100">
@@ -4292,7 +4291,7 @@
                         src="../ccweb.imgix.net/https_/www.classcentral.com/images/logos/providers/edx-trn-sqe227.png?auto=format&amp;cs=strip&amp;fit=&amp;h=50&amp;ixlib=php-3.3.1&amp;w=50&amp;s=86be374faaa2c332611cd8a1cb508975"
                         alt="edX Logo"
                       />
-                      <strong class="margin-left-xsmall fill-space">edX</strong>
+                      <strong class="margin-left-xsmall fill-space">edx</strong>
                     </a>
                   </li>
                   <li class="width-100">
@@ -4307,7 +4306,7 @@
                         alt="FutureLearn Logo"
                       />
                       <strong class="margin-left-xsmall fill-space"
-                        >FutureLearn</strong
+                        >फ्यूचरलियर</strong
                       >
                     </a>
                   </li>
@@ -4339,7 +4338,7 @@
                         alt="Swayam Logo"
                       />
                       <strong class="margin-left-xsmall fill-space"
-                        >Swayam</strong
+                        >स्वयं</strong
                       >
                     </a>
                   </li>
@@ -4355,7 +4354,7 @@
                         alt="LinkedIn Learning Logo"
                       />
                       <strong class="margin-left-xsmall fill-space"
-                        >LinkedIn Learning</strong
+                        >लिंक्डइन लर्निंग</strong
                       >
                     </a>
                   </li>
@@ -4371,7 +4370,7 @@
                         alt="Skillshare Logo"
                       />
                       <strong class="margin-left-xsmall fill-space"
-                        >Skillshare</strong
+                        >skillshare</strong
                       >
                     </a>
                   </li>
@@ -4384,7 +4383,7 @@
                     <span
                       class="text-1 weight-semi icon-chevron-right-charcoal icon-right-small color-charcoal"
                     >
-                      Browse providers
+                     प्रदाताओं को ब्राउज़ करें
                     </span>
                   </a>
                 </div>
@@ -4393,7 +4392,7 @@
                 class="medium-down-hidden decor-grid-line border-box width-100 large-up-width-2-7 padding-horz-small large-up-padding-horz-large relative"
               >
                 <h3 class="head-2 text-left margin-bottom-large">
-                  1000+ Institutions
+                 1000+ संस्थान
                 </h3>
                 <ul class="width-100 row list-no-style margin-bottom-xlarge">
                   <li class="width-100">
@@ -4407,7 +4406,7 @@
                         alt="Google Logo"
                       />
                       <strong class="margin-left-xsmall fill-space"
-                        >Google</strong
+                        >गूगल</strong
                       >
                     </a>
                   </li>
@@ -4422,7 +4421,7 @@
                         alt="Amazon Logo"
                       />
                       <strong class="margin-left-xsmall fill-space"
-                        >Amazon</strong
+                        >वीरांगना</strong
                       >
                     </a>
                   </li>
@@ -4437,7 +4436,7 @@
                         alt="Microsoft Logo"
                       />
                       <strong class="margin-left-xsmall fill-space"
-                        >Microsoft</strong
+                        >माइक्रोसॉफ्ट</strong
                       >
                     </a>
                   </li>
@@ -4451,7 +4450,7 @@
                         src="../ccweb.imgix.net/https_/www.classcentral.com/images/logos/homepage/ibmb3ff.png?auto=format&amp;cs=strip&amp;fit=&amp;h=50&amp;ixlib=php-3.3.1&amp;w=50&amp;s=fbb4ccdbbb895bfc02137b42107f2edf"
                         alt="IBM Logo"
                       />
-                      <strong class="margin-left-xsmall fill-space">IBM</strong>
+                      <strong class="margin-left-xsmall fill-space">आईबीएम</strong>
                     </a>
                   </li>
                   <li class="width-100">
@@ -4465,7 +4464,7 @@
                         alt="Smithsonian Logo"
                       />
                       <strong class="margin-left-xsmall fill-space"
-                        >Smithsonian</strong
+                        >स्मिथसोनियन</strong
                       >
                     </a>
                   </li>
@@ -4480,7 +4479,7 @@
                         alt="United Nations Logo"
                       />
                       <strong class="margin-left-xsmall fill-space"
-                        >United Nations</strong
+                        >संयुक्त राष्ट्र</strong
                       >
                     </a>
                   </li>
@@ -4495,7 +4494,7 @@
                         alt="British Council Logo"
                       />
                       <strong class="margin-left-xsmall fill-space"
-                        >British Council</strong
+                        >ब्रिटिश परिषद</strong
                       >
                     </a>
                   </li>
@@ -4508,7 +4507,7 @@
                     <span
                       class="text-1 weight-semi icon-chevron-right-charcoal icon-right-small color-charcoal"
                     >
-                      Browse institutions
+                      संस्थाओं को ब्राउज़ करें
                     </span>
                   </a>
                 </div>
@@ -4554,8 +4553,8 @@
                 Rankings
               </h2>
               <p class="head-3 weight-semi max-450 width-centered border-box">
-                Tens of thousands of reviews written by Class Central users help
-                you pick the best course.
+                क्लास सेंट्रल यूजर्स द्वारा लिखी गई हजारों समीक्षाएँ मदद करती हैं
+                आप सबसे अच्छा कोर्स चुनते हैं।
               </p>
             </header>
 
@@ -4604,7 +4603,7 @@
                 <span
                   class="text-1 weight-semi icon-chevron-right-charcoal icon-right-small color-charcoal"
                 >
-                  View rankings
+                  व्यू रैंकिंग
                 </span>
               </a>
             </div>
@@ -4617,7 +4616,7 @@
             class="max-850 width-centered border-center border-blue-light text-center margin-bottom-xlarge"
           >
             <h2 class="head-2 bg-white inline-block padding-horz-medium">
-              As seen in
+             में जैसा दिखा
             </h2>
           </header>
 
@@ -4810,7 +4809,7 @@
             >
               <!-- npr -->
               <svg width="100%" viewBox="0 0 165 55">
-                <title>National Public Radio</title>
+                <title>राष्ट्रीय सार्वजनिक रेडियो</title>
                 <path
                   d="M33.63,42.15V25.8c0-2.41-.45-4.16-1.39-5.3s-2.44-1.66-4.55-1.66a7.29,7.29,0,0,0-3.11.81A7,7,0,0,0,22,21.7V42.18H15.4V13.73h4.77L21.4,16.4c1.78-2.08,4.45-3.12,8-3.12a10.57,10.57,0,0,1,8,3c2,2,2.92,4.85,2.92,8.46V42.18Z"
                   fill="#06213d"
@@ -4835,7 +4834,7 @@
             >
               <!-- cnbc 0 0 168 131 -->
               <svg width="100%" viewBox="-25 -15 208 161">
-                <title>CNBC</title>
+                <title>सीएनबीसी</title>
                 <path
                   d="M22.27,26.41c-6.69,6.05-9.12,19.76,2.93,27.77l48.06,33L50,33.76C45.07,21.16,31.71,18.42,22.27,26.41Z"
                   fill="#06213d"
@@ -5260,8 +5259,8 @@
               <h2
                 class="head-2 medium-up-head-1 color-white margin-bottom-medium large-up-margin-bottom-xxlarge"
               >
-                Get the most out of
-                <span style="white-space: nowrap">Class Central</span> with a
+                सबसे अधिक हो जाना
+                <span style="white-space: nowrap">वर्ग केंद्र</span> के साथ
                 <a
                   data-name="SIGNUP_LINK"
                   data-detail='{ "source": "homepage_stats" }'
@@ -5269,7 +5268,7 @@
                   title="Sign up for Class Central"
                   class="head-2 medium-up-head-1 color-yellow"
                 >
-                  free account
+                 नि: शुल्क खाता
                 </a>
               </h2>
 
@@ -5277,21 +5276,21 @@
                 <p
                   class="width-100 large-up-width-1-2 text-left large-up-padding-right-medium border-box margin-bottom-xlarge"
                 >
-                  <strong class="head-1 color-white block">50M</strong>
+                  <strong class="head-1 color-white block">50 मीटर</strong>
                   <span
                     style="margin-left: -20px"
                     class="width-12-16 btn-gradient-navy-flip head-3 xlarge-up-head-2 block weight-semi upper color-white"
-                    >visitors</span
+                    >आगंतुकों</span
                   >
                 </p>
                 <p
                   class="width-100 large-up-width-1-2 text-left large-up-padding-right-medium border-box margin-bottom-xlarge"
                 >
-                  <strong class="head-1 color-white block">3M</strong>
+                  <strong class="head-1 color-white block">चाचा</strong>
                   <span
                     style="margin-left: -20px"
                     class="width-12-16 btn-gradient-navy-flip head-3 xlarge-up-head-2 block weight-semi upper color-white"
-                    >sign-ups</span
+                    >साइन-अप</span
                   >
                 </p>
               </div>
@@ -5302,7 +5301,7 @@
                 <strong class="head-2 color-yellow target-yellow"
                   >15,836</strong
                 >
-                sign ups in the past 7 days
+                पिछले 7 दिनों में साइन अप करें
               </p>
             </div>
             <aside class="relative large-up-width-2-5 border-box">
@@ -5313,18 +5312,18 @@
                   <strong
                     class="head-2 padding-left-medium color-white margin-bottom-xxsmall"
                     style="font-size: 75px"
-                    >30M</strong
+                    >30 मीटर</strong
                   >
                   <span
                     class="text-1 weight-semi upper btn-gradient-navy btn-small block color-white margin-bottom-medium"
                   >
-                    follows
+                   इस प्रकार
                   </span>
                   <p class="text-1 color-white relative padding-left-xlarge">
                     <strong class="text- weight-bold color-yellow target-yellow"
                       >62,690</strong
                     >
-                    follows in the past 7 days
+                    पिछले 7 दिनों में अनुसरण करता है
                   </p>
                 </li>
                 <li
@@ -5333,38 +5332,38 @@
                   <strong
                     class="head-2 padding-left-medium color-white margin-bottom-xxsmall"
                     style="font-size: 75px"
-                    >13M</strong
+                    >13 मीटर</strong
                   >
                   <span
                     class="text-1 weight-semi upper btn-gradient-navy btn-small block color-white margin-bottom-medium"
                   >
-                    bookmarks
+                    बुकमार्क
                   </span>
                   <p class="text-1 color-white relative padding-left-xlarge">
                     <strong
                       class="text-1 weight-bold color-yellow target-yellow"
                       >68,359</strong
                     >
-                    courses bookmarked in the past 7 days
+                   पिछले 7 दिनों में पाठ्यक्रम बुकमार्क किए गए
                   </p>
                 </li>
                 <li class="text-left padding-left-medium margin-bottom-large">
                   <strong
                     class="head-2 padding-left-medium color-white margin-bottom-xxsmall"
                     style="font-size: 75px"
-                    >700k</strong
+                    >700K</strong
                   >
                   <span
                     class="text-1 weight-semi upper btn-gradient-navy btn-small block color-white margin-bottom-medium"
                   >
-                    lists created
+                   बनाई गई सूची
                   </span>
                   <p class="text-1 color-white relative padding-left-xlarge">
                     <strong
                       class="text-1 weight-bold color-yellow target-yellow"
                       >14,124</strong
                     >
-                    lists created in the past 7 days
+                   पिछले 7 दिनों में बनाई गई सूची
                   </p>
                 </li>
               </ul>
@@ -5380,10 +5379,10 @@
             <h2
               class="head-2 medium-up-head-1 margin-bottom-xsmall color-charcoal"
             >
-              Get the
-              <strong class="weight-bold color-blue">latest news</strong> and
-              <strong class="weight-bold color-blue">analysis</strong> in
-              <span style="white-space: nowrap">online education.</span>
+             लाओ
+              <strong class="weight-bold color-blue">ताजा खबर</strong> और
+              <strong class="weight-bold color-blue">विश्लेषण</strong> में
+              <span style="white-space: nowrap">ऑनलाइन शिक्षा.</span>
             </h2>
           </header>
 
@@ -5394,11 +5393,11 @@
               <h3
                 class="text-2 weight-semi upper padding-bottom-xxsmall border-bottom border-gray margin-bottom-medium"
               >
-                Recent articles
+               तात्कालिक लेख
                 <a
                   href="report/feed/index.html"
                   class="margin-left-xxsmall icon-center icon-small icon-rss-charcoal"
-                  >RSS Feed</a
+                  >आरएसएस फीड</a
                 >
               </h3>
               <ul id="home-report-recent" class="row list-no-style">
@@ -5429,8 +5428,8 @@
                           class="head-3 weight-semi line-tight color-charcoal"
                           href="report/coursera-google-new-deal/index.html"
                         >
-                          Coursera’s New Deal with Google Could Cost the Company
-                          Millions
+                          Google के साथ Coursera का नया सौदा कंपनी को खर्च कर सकता है
+                          लाखों
                         </a>
                       </h3>
                       <div class="row nowrap">
@@ -5438,12 +5437,12 @@
                           <a href="report/author/dhawal/index.html"
                             ><span
                               class="text-2 color-charcoal inline-block margin-top-xxsmall margin-right-xsmall inline-block hover-underline"
-                              >By Dhawal Shah</span
+                              >एक शाह कॉल द्वारा</span
                             ></a
                           >
                           <span
                             class="text-2 inline-block color-gray inline-block"
-                            >Feb 27th, 2023</span
+                            >27 फरवरी, 2023</span
                           >
                         </div>
                       </div>
@@ -5464,7 +5463,7 @@
                           class="head-3 weight-semi line-tight color-charcoal"
                           href="report/coursera-free-online-courses/index.html"
                         >
-                          1700 Coursera Courses that Are Still Completely Free
+                          1700 Coursera पाठ्यक्रम जो अभी भी पूरी तरह से स्वतंत्र हैं
                         </a>
                       </h3>
                       <div class="row nowrap">
@@ -5472,12 +5471,12 @@
                           <a href="report/author/dhawal/index.html"
                             ><span
                               class="text-2 color-charcoal inline-block margin-top-xxsmall margin-right-xsmall inline-block hover-underline"
-                              >By Dhawal Shah</span
+                              >एक शाह कॉल द्वारा</span
                             ></a
                           >
                           <span
                             class="text-2 inline-block color-gray inline-block"
-                            >Feb 20th, 2023</span
+                            > फरवरी 20, 2023</span
                           >
                         </div>
                       </div>
@@ -5498,8 +5497,8 @@
                           class="head-3 weight-semi line-tight color-charcoal"
                           href="report/udemy-layoffs/index.html"
                         >
-                          Udemy Lays Off ~200 Staff, After Being Only Major
-                          Player to Avoid Layoffs in 2022
+                         केवल प्रमुख होने के बाद udemy ~ 200 कर्मचारियों को छोड़ देता है
+                          2022 में छंटनी से बचने के लिए खिलाड़ी
                         </a>
                       </h3>
                       <div class="row nowrap">
@@ -5507,12 +5506,12 @@
                           <a href="report/author/dhawal/index.html"
                             ><span
                               class="text-2 color-charcoal inline-block margin-top-xxsmall margin-right-xsmall inline-block hover-underline"
-                              >By Dhawal Shah</span
+                              >एक शाह कॉल द्वारा</span
                             ></a
                           >
                           <span
                             class="text-2 inline-block color-gray inline-block"
-                            >Feb 15th, 2023</span
+                            >फरवरी 15, 2023</span
                           >
                         </div>
                       </div>
@@ -5533,8 +5532,8 @@
                           class="head-3 weight-semi line-tight color-charcoal"
                           href="report/harvard-cs50-guide/index.html"
                         >
-                          Harvard CS50 Guide: How to Pick the Right Course (with
-                          Free Certificate)
+                         हार्वर्ड CS50 गाइड: कैसे सही पाठ्यक्रम चुनें (के साथ
+                          नि: शुल्क प्रमाण पत्र
                         </a>
                       </h3>
                       <div class="row nowrap">
@@ -5542,12 +5541,12 @@
                           <a href="report/author/manoel/index.html"
                             ><span
                               class="text-2 color-charcoal inline-block margin-top-xxsmall margin-right-xsmall inline-block hover-underline"
-                              >By Manoel Cortes Mendez</span
+                              >मनोएल कोर्टेस मेंडेज़ द्वारा</span
                             ></a
                           >
                           <span
                             class="text-2 inline-block color-gray inline-block"
-                            >Feb 7th, 2023</span
+                            >फरवरी 7, 2023</span
                           >
                         </div>
                       </div>
@@ -5568,7 +5567,7 @@
                           class="head-3 weight-semi line-tight color-charcoal"
                           href="report/chinese-mooc-platforms/index.html"
                         >
-                          Massive List of Chinese Online Course Platforms in
+                         चीनी ऑनलाइन पाठ्यक्रम प्लेटफार्मों की विशाल सूची
                           2023
                         </a>
                       </h3>
@@ -5577,12 +5576,12 @@
                           <a href="report/author/ruima/index.html"
                             ><span
                               class="text-2 color-charcoal inline-block margin-top-xxsmall margin-right-xsmall inline-block hover-underline"
-                              >By Rui Ma</span
+                              >रुई मा द्वारा</span
                             ></a
                           >
                           <span
                             class="text-2 inline-block color-gray inline-block"
-                            >Feb 6th, 2023</span
+                            >फरवरी 6, 2023</span
                           >
                         </div>
                       </div>
@@ -5603,8 +5602,8 @@
                           class="head-3 weight-semi line-tight color-charcoal"
                           href="report/futurelearn-expands-paywall/index.html"
                         >
-                          FutureLearn Under New Leadership Expands Paywall,
-                          Restricts Course Binging
+                          नए नेतृत्व के तहत FutureLearn Paywall का विस्तार करता है,
+                          कोर्स बिंगिंग को प्रतिबंधित करता है
                         </a>
                       </h3>
                       <div class="row nowrap">
@@ -5612,12 +5611,12 @@
                           <a href="report/author/pat-bowden/index.html"
                             ><span
                               class="text-2 color-charcoal inline-block margin-top-xxsmall margin-right-xsmall inline-block hover-underline"
-                              >By Pat Bowden</span
+                              >पैट बोडेन द्वारा</span
                             ></a
                           >
                           <span
                             class="text-2 inline-block color-gray inline-block"
-                            >Jan 31st, 2023</span
+                            >31 जनवरी, 2023</span
                           >
                         </div>
                       </div>
@@ -5638,8 +5637,8 @@
                           class="head-3 weight-semi line-tight color-charcoal"
                           href="report/udemy-by-the-numbers/index.html"
                         >
-                          202K Courses, 662M Enrollments: Breaking Down Udemy’s
-                          Massive Catalog
+                         202K पाठ्यक्रम, 662M नामांकन: udemy के टूटना
+                          बड़े पैमाने पर सूची
                         </a>
                       </h3>
                       <div class="row nowrap">
@@ -5647,12 +5646,12 @@
                           <a href="report/author/dhawal/index.html"
                             ><span
                               class="text-2 color-charcoal inline-block margin-top-xxsmall margin-right-xsmall inline-block hover-underline"
-                              >By Dhawal Shah</span
+                              >एक शाह कॉल द्वारा</span
                             ></a
                           >
                           <span
                             class="text-2 inline-block color-gray inline-block"
-                            >Jan 25th, 2023</span
+                            >25 जनवरी, 2023</span
                           >
                         </div>
                       </div>
@@ -5673,8 +5672,8 @@
                           class="head-3 weight-semi line-tight color-charcoal"
                           href="report/domestika-layoffs/index.html"
                         >
-                          Domestika, the Online Learning Unicorn, Closes Global
-                          Offices and Downsizes Staff by 40%
+                         डोमेस्टिका, ऑनलाइन लर्निंग यूनिकॉर्न, ग्लोबल को बंद करता है
+                          कार्यालय और कर्मचारियों को 40% तक कम कर देता है
                         </a>
                       </h3>
                       <div class="row nowrap">
@@ -5682,12 +5681,12 @@
                           <a href="report/author/dhawal/index.html"
                             ><span
                               class="text-2 color-charcoal inline-block margin-top-xxsmall margin-right-xsmall inline-block hover-underline"
-                              >By Dhawal Shah</span
+                              >एक शाह कॉल द्वारा</span
                             ></a
                           >
                           <span
                             class="text-2 inline-block color-gray inline-block"
-                            >Jan 23rd, 2023</span
+                            >जीन प्रस्ताव, 2023</span
                           >
                         </div>
                       </div>
@@ -5708,8 +5707,8 @@
                           class="head-3 weight-semi line-tight color-charcoal"
                           href="report/thinkific-layoffs/index.html"
                         >
-                          Thinkific Lays Off 75 More Employees, After the 100 of
-                          Last March
+                         100 के बाद, 75 और कर्मचारियों को छोड़ देता है
+                          पिछले मार्च में
                         </a>
                       </h3>
                       <div class="row nowrap">
@@ -5717,12 +5716,12 @@
                           <a href="report/author/dhawal/index.html"
                             ><span
                               class="text-2 color-charcoal inline-block margin-top-xxsmall margin-right-xsmall inline-block hover-underline"
-                              >By Dhawal Shah</span
+                              >एक शाह कॉल द्वारा</span
                             ></a
                           >
                           <span
                             class="text-2 inline-block color-gray inline-block"
-                            >Jan 16th, 2023</span
+                            >16 जनवरी, 2023</span
                           >
                         </div>
                       </div>
@@ -5737,7 +5736,7 @@
               <h3
                 class="text-2 padding-bottom-xxsmall weight-semi upper border-bottom border-gray margin-bottom-medium"
               >
-                Best Courses Guides
+               सर्वश्रेष्ठ पाठ्यक्रम गाइड
               </h3>
               <ul class="margin-bottom-xlarge list-no-style">
                 <li
@@ -5768,13 +5767,13 @@
                         class="head-3 medium-up-head-2 color-charcoal"
                         href="report/best-elm-courses/index.html"
                       >
-                        7 Best Elm Courses
+                        7 सर्वश्रेष्ठ एल्म पाठ्यक्रम
                       </a>
                     </h2>
                     <p class="text-2 color-charcoal">
-                      <strong class="weight-semi">Elham Nazif</strong>
+                      <strong class="weight-semi">प्रेरणा</strong>
                       <span class="margin-left-xsmall inline-block color-gray"
-                        >Feb 27th, 2023</span
+                        >27 फरवरी, 2023</span
                       >
                     </p>
                   </div>
@@ -5807,13 +5806,13 @@
                         class="head-3 medium-up-head-2 color-charcoal"
                         href="report/best-resume-writing-courses/index.html"
                       >
-                        10 Best Resume Writing Courses
+                       10 सर्वश्रेष्ठ फिर से शुरू लेखन पाठ्यक्रम
                       </a>
                     </h2>
                     <p class="text-2 color-charcoal">
-                      <strong class="weight-semi">Archisha Bhar</strong>
+                      <strong class="weight-semi">अर्चिशा भर</strong>
                       <span class="margin-left-xsmall inline-block color-gray"
-                        >Feb 21st, 2023</span
+                        >21 फरवरी, 2023</span
                       >
                     </p>
                   </div>
@@ -5846,13 +5845,13 @@
                         class="head-3 medium-up-head-2 color-charcoal"
                         href="report/best-ocaml-courses/index.html"
                       >
-                        7 Best Free OCaml Courses
+                       7 सर्वश्रेष्ठ मुफ्त OCAML पाठ्यक्रम
                       </a>
                     </h2>
                     <p class="text-2 color-charcoal">
-                      <strong class="weight-semi">Elham Nazif</strong>
+                      <strong class="weight-semi">प्रेरणा</strong>
                       <span class="margin-left-xsmall inline-block color-gray"
-                        >Feb 20th, 2023</span
+                        >फरवरी 20, 2023</span
                       >
                     </p>
                   </div>
@@ -5885,13 +5884,13 @@
                         class="head-3 medium-up-head-2 color-charcoal"
                         href="report/best-davinci-resolve-courses/index.html"
                       >
-                        9 Best DaVinci Resolve Courses
+                       9 बेस्ट डेविनि रिज़ॉल्यूशन कोर्स
                       </a>
                     </h2>
                     <p class="text-2 color-charcoal">
-                      <strong class="weight-semi">Archisha Bhar</strong>
+                      <strong class="weight-semi">अर्चिशा भर</strong>
                       <span class="margin-left-xsmall inline-block color-gray"
-                        >Feb 14th, 2023</span
+                        >14 फरवरी, 2023</span
                       >
                     </p>
                   </div>
@@ -5922,13 +5921,13 @@
                         class="head-3 medium-up-head-2 color-charcoal"
                         href="report/best-free-prolog-courses/index.html"
                       >
-                        6 Best Free Prolog Courses
+                       6 सर्वश्रेष्ठ मुफ्त प्रस्तावना पाठ्यक्रम
                       </a>
                     </h2>
                     <p class="text-2 color-charcoal">
-                      <strong class="weight-semi">Elham Nazif</strong>
+                      <strong class="weight-semi">प्रेरणा</strong>
                       <span class="margin-left-xsmall inline-block color-gray"
-                        >Feb 13th, 2023</span
+                        >13 फरवरी, 2023</span
                       >
                     </p>
                   </div>
@@ -5945,11 +5944,11 @@
               <span
                 class="text-1 weight-semi icon-chevron-right-charcoal icon-right-small color-charcoal"
               >
-                More on
+               अधिक
                 <i
                   style="width: 80px; top: 2px"
                   class="margin-left-xxsmall relative inline-block symbol-report"
-                  >The Report</i
+                  >रिपोर्ट</i
                 >
               </span>
             </a>
@@ -5966,11 +5965,11 @@
               <h2
                 class="head-2 medium-up-head-1 margin-bottom-xsmall color-charcoal"
               >
-                Browse our popular
+               हमारे लोकप्रिय ब्राउज़ करें
                 <strong
                   class="head-2 medium-up-head-1"
                   style="white-space: nowrap; color: #007671"
-                  >curated collections</strong
+                  >चुनिंदा संग्रह</strong
                 >
               </h2>
             </header>
@@ -6063,7 +6062,7 @@
                 <span
                   class="text-1 weight-semi icon-chevron-right-charcoal icon-right-small color-charcoal"
                 >
-                  Browse collections
+                 कलेक्शन ब्राउज़ करें
                 </span>
               </a>
             </div>
@@ -6084,10 +6083,10 @@
               class="icon-lettermark-charcoal relative icon-large"
               style="top: 2px"
             >
-              <span class="off-page">Home</span>
+              <span class="off-page">घर</span>
             </i>
           </a>
-          <div class="text-2 inline-block color-charcoal">Home</div>
+          <div class="text-2 inline-block color-charcoal">घर</div>
         </div>
         <nav class="row wrap xlarge-up-nowrap margin-bottom-medium">
           <div class="row width-100 medium-up-width-4-5 xlarge-up-width-1-2">
@@ -6098,40 +6097,40 @@
                 href="subjects.html"
                 class="inline-block margin-bottom-xxsmall text-2 color-charcoal weight-bold border-bottom border-gray hover-no-underline"
               >
-                Browse by subject
+               विषय द्वारा ब्राउज़ करें
               </a>
               <ul class="list-no-style text-2">
                 <li class="margin-vert-xxsmall">
                   <a class="color-charcoal" href="subject/cs.html"
-                    >Computer Science</a
+                    >कंप्यूटर विज्ञान</a
                   >
                 </li>
                 <li class="margin-vert-xxsmall">
                   <a class="color-charcoal" href="subject/psychology.html"
-                    >Psychology</a
+                    >मनोविज्ञान</a
                   >
                 </li>
                 <li class="margin-vert-xxsmall">
                   <a class="color-charcoal" href="subject/cybersecurity.html"
-                    >Cybersecurity</a
+                    >साइबर सुरक्षा</a
                   >
                 </li>
                 <li class="margin-vert-xxsmall">
                   <a class="color-charcoal" href="subject/health.html"
-                    >Health</a
+                    >स्वास्थ्य</a
                   >
                 </li>
                 <li class="margin-vert-xxsmall">
-                  <a class="color-charcoal" href="subject/law.html">Law</a>
+                  <a class="color-charcoal" href="subject/law.html">कानून</a>
                 </li>
                 <li class="margin-vert-xxsmall">
                   <a class="color-charcoal" href="subject/accounting.html"
-                    >Accounting</a
+                    >लेखांकन</a
                   >
                 </li>
                 <li class="margin-vert-xxsmall">
                   <a class="color-charcoal" href="subject/web-development.html"
-                    >Web Development</a
+                    >वेब विकास</a
                   >
                 </li>
               </ul>
@@ -6143,12 +6142,12 @@
                 href="providers.html"
                 class="inline-block margin-bottom-xxsmall text-2 color-charcoal weight-bold border-bottom border-gray hover-no-underline"
               >
-                Browse by provider
+               प्रदाता द्वारा ब्राउज़ करें
               </a>
               <ul class="list-no-style text-2">
                 <li class="margin-vert-xxsmall">
                   <a class="color-charcoal" href="provider/coursera.html"
-                    >Coursera</a
+                    >coursera</a
                   >
                 </li>
                 <li class="margin-vert-xxsmall">
@@ -6156,27 +6155,27 @@
                 </li>
                 <li class="margin-vert-xxsmall">
                   <a class="color-charcoal" href="provider/futurelearn.html"
-                    >FutureLearn</a
+                    >फ्यूचरलियर</a
                   >
                 </li>
                 <li class="margin-vert-xxsmall">
                   <a class="color-charcoal" href="provider/udacity.html"
-                    >Udacity</a
+                    >उग्रता</a
                   >
                 </li>
                 <li class="margin-vert-xxsmall">
                   <a class="color-charcoal" href="provider/swayam.html"
-                    >Swayam</a
+                    >स्वयं</a
                   >
                 </li>
                 <li class="margin-vert-xxsmall">
-                  <a class="color-charcoal" href="provider/udemy.html">Udemy</a>
+                  <a class="color-charcoal" href="provider/udemy.html">udemy</a>
                 </li>
                 <li class="margin-vert-xxsmall">
                   <a
                     class="color-charcoal"
                     href="provider/linkedin-learning.html"
-                    >LinkedIn Learning</a
+                    >लिंक्डइन लर्निंग</a
                   >
                 </li>
               </ul>
@@ -6188,42 +6187,42 @@
                 href="universities.html"
                 class="inline-block text-2 margin-bottom-xxsmall color-charcoal weight-bold border-bottom border-gray hover-no-underline"
               >
-                Browse by university
+               विश्वविद्यालय द्वारा ब्राउज़ करें
               </a>
               <ul class="list-no-style text-2">
                 <li class="margin-vert-xxsmall">
                   <a class="color-charcoal" href="university/harvard.html"
-                    >Harvard</a
+                    >हार्वर्ड</a
                   >
                 </li>
                 <li class="margin-vert-xxsmall">
                   <a class="color-charcoal" href="university/stanford.html"
-                    >Stanford</a
+                    >स्टैनफोर्ड</a
                   >
                 </li>
                 <li class="margin-vert-xxsmall">
                   <a class="color-charcoal" href="university/gatech.html"
-                    >Georgia Tech</a
+                    >जॉर्जिया टेक</a
                   >
                 </li>
                 <li class="margin-vert-xxsmall">
                   <a class="color-charcoal" href="university/umich.html"
-                    >University of Michigan</a
+                    >मिशिगन यूनिवर्सिटी</a
                   >
                 </li>
                 <li class="margin-vert-xxsmall">
                   <a class="color-charcoal" href="university/purdue.html"
-                    >Purdue University</a
+                    >पर्ड्यू विश्वविद्यालय</a
                   >
                 </li>
                 <li class="margin-vert-xxsmall">
                   <a class="color-charcoal" href="university/duke.html"
-                    >Duke University</a
+                    >ड्यूक विश्वविद्यालय</a
                   >
                 </li>
                 <li class="margin-vert-xxsmall">
                   <a class="color-charcoal" href="university/iitm.html"
-                    >IIT Madras</a
+                    >आईआईटी मद्रास</a
                   >
                 </li>
               </ul>
@@ -6237,44 +6236,44 @@
                 href="institutions.html"
                 class="inline-block margin-bottom-xxsmall text-2 color-charcoal weight-bold border-bottom border-gray hover-no-underline"
               >
-                Browse by institution
+               संस्था द्वारा ब्राउज़ करें
               </a>
               <ul class="list-no-style text-2">
                 <li class="margin-vert-xxsmall">
                   <a class="color-charcoal" href="institution/google.html"
-                    >Google</a
+                    >गूगल</a
                   >
                 </li>
                 <li class="margin-vert-xxsmall">
                   <a class="color-charcoal" href="institution/microsoft.html"
-                    >Microsoft</a
+                    >माइक्रोसॉफ्ट</a
                   >
                 </li>
                 <li class="margin-vert-xxsmall">
-                  <a class="color-charcoal" href="institution/ibm.html">IBM</a>
+                  <a class="color-charcoal" href="institution/ibm.html">आईबीएम</a>
                 </li>
                 <li class="margin-vert-xxsmall">
                   <a class="color-charcoal" href="institution/amazon.html"
-                    >Amazon</a
+                    >वीरांगना</a
                   >
                 </li>
                 <li class="margin-vert-xxsmall">
                   <a
                     class="color-charcoal"
                     href="institution/linuxfoundation.html"
-                    >Linux Foundation</a
+                    >लिनक्स फाउंडेशन</a
                   >
                 </li>
                 <li class="margin-vert-xxsmall">
                   <a
                     class="color-charcoal"
                     href="institution/british-council.html"
-                    >British Council</a
+                    >ब्रिटिश परिषद</a
                   >
                 </li>
                 <li class="margin-vert-xxsmall">
                   <a class="color-charcoal" href="institution/salesforce.html"
-                    >Salesforce</a
+                    >बिक्री बल</a
                   >
                 </li>
               </ul>
@@ -6284,56 +6283,56 @@
                 href="rankings.html"
                 class="inline-block margin-bottom-xxsmall text-2 color-charcoal weight-bold border-bottom border-gray hover-no-underline"
               >
-                Rankings
+                रैंकिंग
               </a>
               <ul class="list-no-style text-2">
                 <li class="margin-vert-xxsmall">
                   <a
                     class="color-charcoal"
                     href="collection/top-free-online-courses.html"
-                    >Best Online Courses of All Time</a
+                    >सभी समय के सर्वश्रेष्ठ ऑनलाइन पाठ्यक्रम</a
                   >
                 </li>
                 <li class="margin-vert-xxsmall">
                   <a
                     class="color-charcoal"
                     href="report/best-free-online-courses-2022/index.html"
-                    >Best Online Courses of the Year</a
+                    >वर्ष के सर्वश्रेष्ठ ऑनलाइन पाठ्यक्रम</a
                   >
                 </li>
                 <li class="margin-vert-xxsmall">
                   <a
                     class="color-charcoal"
                     href="report/most-popular-online-courses/index.html"
-                    >Most Popular Courses of All Time</a
+                    >सभी समय के सबसे लोकप्रिय पाठ्यक्रम</a
                   >
                 </li>
                 <li class="margin-vert-xxsmall">
                   <a
                     class="color-charcoal"
                     href="report/most-popular-courses-2023/index.html"
-                    >Most Popular Courses of the Year</a
+                    >वर्ष के सबसे लोकप्रिय पाठ्यक्रम</a
                   >
                 </li>
                 <li class="margin-vert-xxsmall">
                   <a
                     class="color-charcoal"
                     href="report/coursera-top-courses/index.html"
-                    >250 Top FREE Coursera Courses of All Time</a
+                    >सभी समय के 250 शीर्ष मुक्त आंगन पाठ्यक्रम</a
                   >
                 </li>
                 <li class="margin-vert-xxsmall">
                   <a
                     class="color-charcoal"
                     href="report/edx-top-courses/index.html"
-                    >100 Top FREE edX Courses of All Time</a
+                    >सभी समय के 100 शीर्ष नि: शुल्क EDX पाठ्यक्रम</a
                   >
                 </li>
                 <li class="margin-vert-xxsmall">
                   <a
                     class="color-charcoal"
                     href="report/udemy-top-courses/index.html"
-                    >250 Top Udemy Courses of All Time</a
+                    >सभी समय के 250 शीर्ष udemy पाठ्यक्रम</a
                   >
                 </li>
               </ul>
@@ -6353,15 +6352,15 @@
                 <i
                   style="width: 80px; top: 1px"
                   class="relative inline-block symbol-report"
-                  >The Report</i
+                  >रिपोर्ट</i
                 >
-                by Class Central
+               क्लास सेंट्रल द्वारा
               </a>
               <a
                 href="report/feed/index.html"
                 class="margin-left-xxsmall icon-center icon-small icon-rss-charcoal"
               >
-                RSS Feed
+               आरएसएस फीड
               </a>
               <ul class="row list-no-style text-2">
                 <li
@@ -6373,7 +6372,7 @@
                     class="color-charcoal"
                     href="report/2022-year-in-review/index.html"
                     title='The "New Normal" that Wasn&#039;t'
-                    >The &quot;New Normal&quot; that Wasn&#039;t</a
+                    >नया सामान्य है कि नहीं था</a
                   >
                 </li>
                 <li
@@ -6385,7 +6384,7 @@
                     class="color-charcoal"
                     href="report/class-central-ddos-attack/index.html"
                     title="DDoS Attack on Class Central"
-                    >DDoS Attack on Class Central</a
+                    >क्लास सेंट्रल पर डीडीओएस हमला</a
                   >
                 </li>
                 <li
@@ -6397,7 +6396,7 @@
                     class="color-charcoal"
                     href="report/india-online-degrees/index.html"
                     title="500+ Online Degrees in India"
-                    >500+ Online Degrees in India</a
+                    >भारत में 500+ ऑनलाइन डिग्री</a
                   >
                 </li>
                 <li
@@ -6409,7 +6408,7 @@
                     class="color-charcoal"
                     href="report/cs50-free-certificate/index.html"
                     title="Harvard&#039;s CS50 Free Certificate Guide"
-                    >Harvard&#039;s CS50 Free Certificate Guide</a
+                    >हार्वर्ड का CS50 फ्री सर्टिफिकेट गाइड</a
                   >
                 </li>
                 <li
@@ -6421,7 +6420,7 @@
                     class="color-charcoal"
                     href="report/open-university-insiders-perspective/index.html"
                     title="How Open University Works"
-                    >How Open University Works</a
+                    >ओपन यूनिवर्सिटी कैसे काम करती है</a
                   >
                 </li>
               </ul>
@@ -6435,7 +6434,7 @@
                 class="inline-block margin-bottom-xxsmall text-2 color-charcoal weight-bold border-bottom border-gray hover-no-underline"
                 href="report/free-certificates/index.html"
                 title="Free Courses and Certificates"
-                >Free Certificates &amp; Courses</a
+                >नि: शुल्क प्रमाण पत्र पाठ्यक्रम</a
               >
               <ul class="row list-no-style text-2">
                 <li
@@ -6447,7 +6446,7 @@
                     class="color-charcoal"
                     href="report/google-free-certificates/index.html"
                     title="700+ Free Google Certificates"
-                    >700+ Free Google Certificates</a
+                    >700+ नि: शुल्क Google प्रमाण पत्र</a
                   >
                 </li>
                 <li
@@ -6459,7 +6458,7 @@
                     class="color-charcoal"
                     href="report/linkedin-learning-free-learning-paths/index.html"
                     title="Free LinkedIn Learning Certificates"
-                    >Free LinkedIn Learning Certificates</a
+                    >मुफ्त लिंक्डइन लर्निंग सर्टिफिकेट</a
                   >
                 </li>
                 <li
@@ -6471,7 +6470,7 @@
                     class="color-charcoal"
                     href="report/coursera-free-online-courses/index.html"
                     title="1700 Free Coursera Courses"
-                    >1700 Free Coursera Courses</a
+                    >1700 फ्री कोर्टरा पाठ्यक्रम</a
                   >
                 </li>
                 <li
@@ -6483,7 +6482,7 @@
                     class="color-charcoal"
                     href="collection/ivy-league-moocs/index.html"
                     title="Ivy League Online Courses"
-                    >Ivy League Online Courses</a
+                    >आइवी लीग ऑनलाइन पाठ्यक्रम</a
                   >
                 </li>
                 <li
@@ -6495,7 +6494,7 @@
                     class="color-charcoal"
                     href="report/writing-free-online-courses/index.html"
                     title="175+ Free Writing Online Courses"
-                    >175+ Free Writing Online Courses</a
+                    >175+ मुफ्त लेखन ऑनलाइन पाठ्यक्रम</a
                   >
                 </li>
               </ul>
@@ -6507,12 +6506,12 @@
                 href="about.html"
                 class="inline-block margin-bottom-xxsmall text-2 color-charcoal weight-bold border-bottom border-gray hover-no-underline"
               >
-                About Class Central
+               क्लास सेंट्रल के बारे में
               </a>
               <p class="text-2">
-                Class Central aggregates courses from many providers to help you
-                find the best courses on almost any subject, wherever they
-                exist.
+                क्लास सेंट्रल एग्रीगेट्स कई प्रदाताओं से आपकी मदद करने के लिए पाठ्यक्रम
+                लगभग किसी भी विषय पर सबसे अच्छा पाठ्यक्रम खोजें, जहां भी वे
+                अस्तित्व।
               </p>
               <ul class="margin-vert-medium list-no-style list-inline">
                 <li class="margin-right-xxsmall">
@@ -6521,7 +6520,7 @@
                     target="_blank"
                     href="https://www.facebook.com/classcentral"
                     class="icon-center icon-facebook-charcoal icon-medium"
-                    >Facebook</a
+                    >फेसबुक</a
                   >
                 </li>
                 <li class="margin-horz-xxsmall">
@@ -6530,7 +6529,7 @@
                     target="_blank"
                     href="https://www.twitter.com/classcentral"
                     class="icon-center icon-twitter-charcoal icon-medium"
-                    >Twitter</a
+                    >ट्विटर</a
                   >
                 </li>
                 <li class="margin-horz-xxsmall">
@@ -6539,7 +6538,7 @@
                     target="_blank"
                     href="https://www.linkedin.com/company/classcentral"
                     class="icon-center icon-linkedin-charcoal icon-medium"
-                    >LinkedIn</a
+                    >Linkedin</a
                   >
                 </li>
                 <li class="margin-horz-xxsmall">
@@ -6548,7 +6547,7 @@
                     target="_blank"
                     href="https://www.youtube.com/classcentral"
                     class="icon-center icon-youtube-charcoal icon-medium"
-                    >YouTube</a
+                    >यूट्यूब</a
                   >
                 </li>
               </ul>
@@ -6560,25 +6559,25 @@
           class="large-up-row vert-align-middle large-up-horz-align-left border-top border-gray-mid padding-top-medium"
         >
           <p>
-            Class Central © 2011-2023
+           क्लास सेंट्रल © 2011-2023
             <a
               href="about/privacy-policy.html"
               class="color-charcoal block large-up-inline-block large-up-margin-left-xsmall"
-              >Privacy Policy</a
+              >गोपनीयता नीति</a
             >
           </p>
           <ul class="list-no-style list-inline large-up-horz-align-right">
             <li class="block large-up-inline-block large-up-padding-horz-small">
-              <a class="color-charcoal" href="about.html">About Us</a>
+              <a class="color-charcoal" href="about.html">हमारे बारे में</a>
             </li>
             <li class="block large-up-inline-block large-up-padding-horz-small">
-              <a class="color-charcoal" href="about/careers.html">Join Us</a>
+              <a class="color-charcoal" href="about/careers.html">हमसे जुड़ें</a>
             </li>
             <li class="block large-up-inline-block large-up-padding-horz-small">
-              <a class="color-charcoal" href="help.html">Help Center</a>
+              <a class="color-charcoal" href="help.html">सहायता केंद्र</a>
             </li>
             <li class="block large-up-inline-block large-up-padding-horz-small">
-              <a class="color-charcoal" href="contact.html">Contact Us</a>
+              <a class="color-charcoal" href="contact.html">संपर्क करें</a>
             </li>
           </ul>
         </div>
@@ -9698,7 +9697,7 @@
                         (t =
                           '<html xmlns="http://www.w3.org/1999/xhtml"><head></head><body>' +
                           t +
-                          "</body></html>");
+                          "");
                       var a = ot ? ot.createHTML(t) : t;
                       if (Kt === Jt)
                         try {
